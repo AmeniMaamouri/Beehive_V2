@@ -57,7 +57,7 @@ html, body{
 .reservation, .privateOffice, .events, .subscription{
     font-family: 'Poppins', sans-serif;
     margin-top: 50px !important;
-    margin-left: 20%;
+    margin-left: 30%;
     background-color: white;
     padding: 30px 40px;
     width: 180px;
@@ -113,8 +113,32 @@ html, body{
 
 @media (max-width: 1310px){
     .reservation, .privateOffice, .events, .subscription{
+        margin-left: 10% !important;
+    }
 
-        margin-left: 10%;
+}
+
+@media (max-width: 1588px){
+    .reservation, .privateOffice, .events, .subscription{
+        margin-left: 20%;
+    }
+
+}
+
+@media (max-width: 1180px){
+    .reservation, .privateOffice, .events, .subscription{
+        padding: 30px 30px;
+        width: 160px;
+        margin-left: 8% !important;
+    }
+
+}
+
+@media (max-width: 1028px){
+    .reservation, .privateOffice, .events, .subscription{
+        padding: 30px 30px;
+        width: 160px;
+        margin-left: 3% !important;
     }
 
 }
@@ -128,4 +152,3 @@ html, body{
    
     border-radius: 10px;
 }
-
