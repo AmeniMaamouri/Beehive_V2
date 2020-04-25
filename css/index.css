@@ -108,10 +108,14 @@ html, body{
     margin-left: 20px !important;
  
 }
-/* .active {
+.activePage {
+    background-color: #E3B038 !important;
+}
+
+.activePage img, .activePage p{
     -webkit-filter: brightness(0) invert(1);  
-    background-color: tomato !important;
-} */
+    font-weight: bold;
+}
 
 
 @media (max-width: 1340px){
