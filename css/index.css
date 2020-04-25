@@ -66,6 +66,12 @@ html, body{
 }
 
 
+.reservation:hover, .privateOffice:hover, .events:hover, .subscription:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
 #content p {
     color: #707070;
 }
@@ -229,9 +235,9 @@ html, body{
     color: white;
     text-decoration: none !important;
 }
-.privet {
-    margin-top: 11px;
-margin-bottom: 40px !important;
+.privet2 {
+margin-bottom: 30px !important;
+margin-top: 11px;
 }
 
 @media(max-width: 1580px){
@@ -278,9 +284,27 @@ margin-bottom: 40px !important;
         margin-top: 110px !important;
     }
 
+    .privet2 {
+        margin-top: 11px;
+    margin-bottom: 10px !important;
+    }
+
  
 
 }
+
+
+@media(max-width: 1060px){
+
+    .blog .carousel-indicators {
+        bottom: -15px !important;
+    }
+ 
+
+}
+
+
+
 
 @media(max-width: 991px){
 
@@ -306,9 +330,8 @@ margin-bottom: 40px !important;
        
     }
 
-    .privet {
-        margin-top: 0px;
-    margin-bottom: 10px !important;
+    .btnRent {
+        margin-bottom: 30px !important;
     }
 
 }
@@ -322,6 +345,49 @@ margin-bottom: 40px !important;
     }
 
 }
+
+.blog .carousel-indicators {
+   
+    bottom: -55px;
+    margin-bottom: 30px !important;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    margin-top: -2%;
+    display: inline-block;
+    width: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 15px;
+    text-indent: -999px;
+    border: 1px solid #E3B038;
+    border-radius: 10px;
+}
+
+.blog .carousel-indicators .active {
+    background: #E3B038;
+}
+
+
+/* The colour of the indicators */
+.carousel-indicators li {
+    margin-top: -2%;
+    display: inline-block;
+    width: 12px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 12px;
+    text-indent: -999px;
+    border: 1px solid #E3B038;
+    border-radius: 10px;
+
+    margin-top: -7%;
+}
+
+.carousel-indicators .active {
+    background: #E3B038;
+}
+
 
 /* footer */
 
