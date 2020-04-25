@@ -63,7 +63,6 @@ html, body{
     width: 180px;
     border-radius: 10px;
     
-
 }
 
 
@@ -103,11 +102,11 @@ html, body{
     margin-left: 20px !important;
  
 }
+/* .active {
+    -webkit-filter: brightness(0) invert(1);  
+    background-color: tomato !important;
+} */
 
-#leftSide div .image {
-    /*  -webkit-filter: brightness(0) invert(1);   // white color for svg  */
-    
-}
 
 @media (max-width: 1340px){
     .reservation, .privateOffice, .events, .subscription{
@@ -171,6 +170,157 @@ html, body{
     background-color: white;
    
     border-radius: 10px;
+}
+
+/* Privet Office */
+
+.imgPrivetOffice {
+    max-width: 370px;
+    border-radius: 30px;
+    margin-top: 80px !important;
+}
+
+.txtPrivetOffice {
+    padding-top: 90px;
+    
+}
+.txtPrivetOffice h1{
+    font-family: 'Poppins', sans-serif;
+    color: #202124;
+    font-size: 32px;
+}
+ .txtPrivetOffice p, .txtPrivetOffice a {
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+}
+
+.txtPrivetOffice p {
+    color: #A6ADB4;
+    font-size: 19px;
+}
+
+.txtPrivetOffice h1,  .txtPrivetOffice a {
+    font-weight: bold;
+}
+
+
+.btnRent a{
+    background-color: #E3B038;
+    color: white;
+    padding: 10px 45px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+    -webkit-box-shadow: 0px 20px 31px -13px rgba(255,200,61,0.44);
+    -moz-box-shadow: 0px 20px 31px -13px rgba(255,200,61,0.44);
+    box-shadow: 0px 20px 31px -13px rgba(255,200,61,0.44);
+}
+
+.btnRent {
+    margin-top: 7px !important;
+}
+
+.btnPrivetOffice {
+    text-align: right;
+   
+}
+.btnRent a:hover {
+    color: white;
+    text-decoration: none !important;
+}
+.privet {
+    margin-top: 11px;
+margin-bottom: 40px !important;
+}
+
+@media(max-width: 1580px){
+
+    .imgPrivetOffice {
+        max-width: 320px;
+        margin-top: 90px !important;
+
+    }
+
+}
+
+@media(max-width: 1300px){
+
+    .imgPrivetOffice {
+        max-width: 290px;
+        margin-top: 90px !important;
+
+    }
+    .txtPrivetOffice p {
+    
+        font-size: 17px;
+    }
+
+    .btnRent a{
+       
+        padding: 8px 35px;
+        font-size: 19px;
+        
+    }
+
+ 
+
+}
+
+@media(max-width: 1170px){
+
+    .imgOffice{
+        margin-right: 5% !important;
+    }
+
+    .imgPrivetOffice {
+        max-width: 250px;
+        margin-top: 110px !important;
+    }
+
+ 
+
+}
+
+@media(max-width: 991px){
+
+    .imgOffice{
+        text-align: center;
+        margin-top: -80px;
+        margin-right: 0% !important;
+    }
+
+    .imgPrivetOffice {
+        max-width: 350px;
+      
+    }
+
+    .txtPrivetOffice {
+        
+        text-align: center;
+        margin-top: -50px;
+    }
+    .btnPrivetOffice {
+        text-align: center;
+        margin-bottom: 30px;
+       
+    }
+
+    .privet {
+        margin-top: 0px;
+    margin-bottom: 10px !important;
+    }
+
+}
+
+
+@media(max-width: 450px){
+
+    .imgPrivetOffice {
+        max-width: 250px;
+      
+    }
+
 }
 
 /* footer */
