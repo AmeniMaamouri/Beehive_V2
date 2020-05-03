@@ -211,7 +211,7 @@ html, body{
 /* Privet Office : Right Content */
 
 
-/* .rightContent{
+.rightContent{
     margin-top: 50px !important;
     background-color: white;
     border-radius: 10px;
@@ -277,6 +277,19 @@ html, body{
     margin-top: 11px;
 }
 
+
+
+.date {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+.dateTxt {
+    margin-right: 10px;
+    padding-top: 5px;
+    font-weight: 500;
+}
+
 @media(max-width: 1580px){
     .imgPrivetOffice {
         max-width: 320px;
@@ -311,11 +324,9 @@ html, body{
     }
 
     .privet2 {
-        margin-top: 11px;
+        margin-top: -20px;
     margin-bottom: 10px !important;
     }
-
- 
 
 }
 
@@ -353,6 +364,11 @@ html, body{
         margin-bottom: 30px !important;
     }
 
+    .date {
+        
+        margin-bottom: 0px;
+    }
+
 }
 
 
@@ -360,6 +376,31 @@ html, body{
 
     .imgPrivetOffice {
         max-width: 250px;
+    }
+}
+
+@media(max-width: 767px){
+    .input-group{
+        width: 40% !important;
+        margin-bottom: 15px;
+        margin-left: 28%;
+    
+    }
+}
+
+@media(max-width: 680px){
+    .input-group{
+        width: 60% !important;
+        margin-left: 17%;
+    
+    }
+}
+
+@media(max-width: 521px){
+    .input-group{
+        width: 80% !important;
+        margin-left: 8%;
+    
     }
 }
 
@@ -403,7 +444,7 @@ html, body{
 
 .carousel-indicators .active {
     background: #E3B038;
-} */
+} 
 
 
 
@@ -635,7 +676,7 @@ html, body{
 
 /* Subscription : Right Content */
 
-select {
+/* select {
     border-radius: 15px !important;
     min-height: 50px;
     color: #E3B038 !important;
@@ -775,7 +816,7 @@ select option{
 
 }
 
-@media(max-width: 1030px){
+@media(max-width: 1018px){
 
     .card-body button {
         padding: 10px 20px;
@@ -811,4 +852,4 @@ select option{
     .card {
         width: 320px !important;
      }
-}
+} */
