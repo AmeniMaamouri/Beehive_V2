@@ -17,6 +17,10 @@ html, body{
     font-size: 18px;
     margin-left: 35px;
 }
+.nav-link:hover{
+    
+    transform: scale(1.03);
+}
 .navbar-nav {
     margin-right: 40px;
 }
@@ -113,7 +117,7 @@ html, body{
 }
 
 .reservation:hover, .privateOffice:hover, .events:hover, .subscription:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
     cursor: pointer;
 
 }
@@ -272,7 +276,7 @@ html, body{
     color: white;
     text-decoration: none !important;
 }
-.privet2 {
+.privet:nth-of-type(2) {
     margin-bottom: 30px !important;
     margin-top: 11px;
 }
@@ -323,7 +327,7 @@ html, body{
         margin-top: 110px !important;
     }
 
-    .privet2 {
+    .privet:nth-of-type(2) {
         margin-top: -20px;
     margin-bottom: 10px !important;
     }
@@ -444,14 +448,14 @@ html, body{
 
 .carousel-indicators .active {
     background: #E3B038;
-} 
+}  
 
 
 
 /* Events : Right Content */
 
 
-/* 
+/*
 .eventDate {
     color: #FC9700;
     font-weight: bold;
@@ -465,26 +469,36 @@ html, body{
 }
 
 .imgEvents {
-    max-width: 370px;
-    border-radius: 30px;
-    margin-top: 80px !important;
+    max-width: 250px !important;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    
 }
 
 .txtEvent {
-    padding-top: 90px;
+    padding-top: 30px;
     
+    
+}
+
+.btnBookNow:hover{
+    transform: scale(1.03);
+}
+.txtEvent h1{
+    font-size: 21px !important;        
 }
 
 @media(max-width: 1440px){
     .txtEvent h1{
-            font-size: 20px !important;        
+            font-size: 18px !important;        
     }
 }
 
 .txtEvent h1{
     font-family: 'Poppins', sans-serif;
     color: #202124;
-    font-size: 26px;
+   
 }
  .txtEvent p, .txtEvent a {
     font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -494,7 +508,7 @@ html, body{
 
 .txtEvent p {
     color: #A6ADB4;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .txtEvent h1,  .txtEvent a {
@@ -508,15 +522,15 @@ html, body{
     padding: 10px 40px;
     cursor: pointer;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 16px;
    
 }
 
 .btnBookNow {
-    margin-top: 7px !important;
+    margin-top: 10px !important;
 }
 
-.btnPrivetOffice {
+.btnEvent {
     text-align: right;
    
 }
@@ -525,86 +539,122 @@ html, body{
     text-decoration: none !important;
 }
 
-.privet1{
+.filterEvents {
     margin-top: 10px;
+    
 }
-.privet2 {
-    margin-bottom: 30px !important;
-    margin-top: 11px;
+.event:nth-of-type(1){
+    margin-bottom: -30px;
+
 }
+
+.event:nth-of-type(3){
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.eventPrice{
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    color: #E3B038;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+select {
+    border-radius: 15px !important;
+    min-height: 50px;
+   margin-right: 20px !important;
+    width: 250px !important;
+    font-weight: 500 !important;
+    background: url(../img/Dropdown.png) no-repeat right #ddd;
+    background-position-x: 95%;
+    -webkit-appearance: none;
+    font-family: 'Poppins', sans-serif;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+select option{
+    
+    color: black !important;
+    border-radius: 15px !important;
+}
+
+
 
 @media(max-width: 1580px){
     .imgEvents {
-        max-width: 320px;
-        margin-top: 90px !important;
+        max-width: 230px;
+        margin-top: 20px;
+       
     }
 }
 
 @media(max-width: 1300px){
 
     .imgEvents {
-        max-width: 290px;
-        margin-top: 90px !important;
+        max-width: 230px;
+      
     }
     .txtEvent p {
         font-size: 17px;
     }
     .btnBookNow a{
         padding: 8px 35px;
-        font-size: 19px;
+        font-size: 15px !important;
     }
 }
 
 @media(max-width: 1170px){
 
-    .imgOffice{
+    .eventsImgs{
         margin-right: 5% !important;
     }
 
     .imgEvents {
-        max-width: 250px;
-        margin-top: 110px !important;
+        max-width: 230px;
+       
     }
 
-    .privet2 {
-        margin-top: 11px;
-    margin-bottom: 10px !important;
+    .event:nth-of-type(3) {
+        margin-top: -20px;
+   
     }
 
- 
+    .blog .carousel-indicators {
+        bottom: -40px !important;
+       
+    }
 
 }
 
 
 @media(max-width: 1060px){
 
-    .blog .carousel-indicators {
-        bottom: -50px !important;
-    }
 
-    .privet1{
+    .event:nth-of-type(1){
         margin-top: 10px;
     }
-    .privet2 {
-        margin-bottom: 30px !important;
-        margin-top: -30px;
-    }
+  
 }
 
 @media(max-width: 991px){
 
     .blog .carousel-indicators {
         bottom: -15px !important;
+        margin-bottom: 20px !important;
     }
 
-    .imgOffice{
+    .eventsImgs{
         text-align: center;
         margin-top: -80px;
         margin-right: 0% !important;
     }
 
     .imgEvents {
-        max-width: 350px;
+        max-width: 230px;
+        margin-top: 85px;
     }
 
     .txtEvent {
@@ -612,7 +662,7 @@ html, body{
         margin-top: -50px;
     }
 
-    .btnPrivetOffice {
+    .btnEvent {
         text-align: center;
         margin-bottom: 30px;
     }
@@ -621,25 +671,35 @@ html, body{
         margin-bottom: 30px !important;
     }
 
+    .filterEvents {
+       
+        margin-bottom: 0px;
+       
+    }
+    
+    .eventPrice{
+        margin-bottom: 10px;
+    }
+
 }
 
 
 @media(max-width: 450px){
 
     .imgEvents {
-        max-width: 250px;
+        max-width: 200px !important;
     }
 }
 
 .blog .carousel-indicators {
    
-    bottom: -80px;
-    margin-bottom: 30px !important;
+    bottom: -60px;
+    margin-bottom: 20px !important;
 
 }
 
 .blog .carousel-indicators li {
-    margin-top: 200px !important;
+   
     display: inline-block;
     width: 15px;
     background-color: rgba(0, 0, 0, 0);
@@ -647,6 +707,7 @@ html, body{
     text-indent: -999px;
     border: 1px solid #E3B038;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .blog .carousel-indicators .active {
@@ -655,7 +716,7 @@ html, body{
 
 
 .carousel-indicators li {
-    margin-top: 2%;
+    
     display: inline-block;
     width: 12px;
     background-color: rgba(0, 0, 0, 0);
@@ -669,8 +730,7 @@ html, body{
 
 .carousel-indicators .active {
     background: #E3B038;
-} */
-
+}  */
 
 
 
@@ -692,7 +752,7 @@ html, body{
 }
 select option{
     
-    color: #ADAEAF !important;
+    color:black !important;
     border-radius: 15px !important;
 }
 
@@ -746,6 +806,7 @@ select option{
  .card-body p:nth-child(3) {
      margin-top: -18px;
      margin-bottom: 25px;
+     color: black !important;
  }
 
  .card-body p:nth-child(6) {
@@ -773,6 +834,9 @@ select option{
     margin-bottom: -10px;
 }
 
+.card-body button:hover {
+    transform: scale(1.05);
+}
 .subscriptionCards {
     margin-top: 50px;
 }
@@ -852,4 +916,4 @@ select option{
     .card {
         width: 320px !important;
      }
-} */
+}  */
