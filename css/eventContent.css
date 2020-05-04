@@ -1,0 +1,278 @@
+/* Events : Right Content */
+
+
+.eventDate {
+    color: #FC9700;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+ .rightContent{
+    margin-top: 50px !important;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.imgEvents {
+    max-width: 250px !important;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    
+}
+
+.txtEvent {
+    padding-top: 30px;
+    
+    
+}
+
+.btnBookNow:hover{
+    transform: scale(1.03);
+}
+.txtEvent h1{
+    font-size: 21px !important;        
+}
+
+@media(max-width: 1440px){
+    .txtEvent h1{
+            font-size: 18px !important;        
+    }
+}
+
+.txtEvent h1{
+    font-family: 'Poppins', sans-serif;
+    color: #202124;
+   
+}
+ .txtEvent p, .txtEvent a {
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+}
+
+.txtEvent p {
+    color: #A6ADB4;
+    font-size: 18px;
+}
+
+.txtEvent h1,  .txtEvent a {
+    font-weight: bold;
+}
+
+
+.btnBookNow a{
+    background-color: #222831;
+    color: white;
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+   
+}
+
+.btnBookNow {
+    margin-top: 10px !important;
+}
+
+.btnEvent {
+    text-align: right;
+   
+}
+.btnBookNow a:hover {
+    color: white;
+    text-decoration: none !important;
+}
+
+.filterEvents {
+    margin-top: 10px;
+    
+}
+.event:nth-of-type(1){
+    margin-bottom: -30px;
+
+}
+
+.event:nth-of-type(3){
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.eventPrice{
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    color: #E3B038;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+select {
+    border-radius: 15px !important;
+    min-height: 50px;
+   margin-right: 20px !important;
+    width: 250px !important;
+    font-weight: 500 !important;
+    background: url(../img/Dropdown.png) no-repeat right #ddd;
+    background-position-x: 95%;
+    -webkit-appearance: none;
+    font-family: 'Poppins', sans-serif;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+select option{
+    
+    color: black !important;
+    border-radius: 15px !important;
+}
+
+
+
+@media(max-width: 1580px){
+    .imgEvents {
+        max-width: 230px;
+        margin-top: 20px;
+       
+    }
+}
+
+@media(max-width: 1300px){
+
+    .imgEvents {
+        max-width: 230px;
+      
+    }
+    .txtEvent p {
+        font-size: 17px;
+    }
+    .btnBookNow a{
+        padding: 8px 35px;
+        font-size: 15px !important;
+    }
+}
+
+@media(max-width: 1170px){
+
+    .eventsImgs{
+        margin-right: 5% !important;
+    }
+
+    .imgEvents {
+        max-width: 230px;
+       
+    }
+
+    .event:nth-of-type(3) {
+        margin-top: -20px;
+   
+    }
+
+    .blog .carousel-indicators {
+        bottom: -40px !important;
+       
+    }
+
+}
+
+
+@media(max-width: 1060px){
+
+
+    .event:nth-of-type(1){
+        margin-top: 10px;
+    }
+  
+}
+
+@media(max-width: 991px){
+
+    .blog .carousel-indicators {
+        bottom: -15px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .eventsImgs{
+        text-align: center;
+        margin-top: -80px;
+        margin-right: 0% !important;
+    }
+
+    .imgEvents {
+        max-width: 230px;
+        margin-top: 85px;
+    }
+
+    .txtEvent {
+        text-align: center;
+        margin-top: -50px;
+    }
+
+    .btnEvent {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .btnBookNow {
+        margin-bottom: 30px !important;
+    }
+
+    .filterEvents {
+       
+        margin-bottom: 0px;
+       
+    }
+    
+    .eventPrice{
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media(max-width: 450px){
+
+    .imgEvents {
+        max-width: 200px !important;
+    }
+}
+
+.blog .carousel-indicators {
+   
+    bottom: -60px;
+    margin-bottom: 20px !important;
+
+}
+
+.blog .carousel-indicators li {
+   
+    display: inline-block;
+    width: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 15px;
+    text-indent: -999px;
+    border: 1px solid #E3B038;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog .carousel-indicators .active {
+    background: #E3B038;
+}
+
+
+.carousel-indicators li {
+    
+    display: inline-block;
+    width: 12px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 12px;
+    text-indent: -999px;
+    border: 1px solid #E3B038;
+    border-radius: 10px;
+
+    margin-top: -7%;
+}
+
+.carousel-indicators .active {
+    background: #E3B038;
+}  
