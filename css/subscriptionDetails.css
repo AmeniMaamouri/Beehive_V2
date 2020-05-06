@@ -59,6 +59,33 @@ select option{
      width: 63%;
  }
 
+
+ .custom-range::-webkit-slider-thumb:hover {
+    background: #E3B038;
+    
+  }
+  
+  .custom-range::-moz-range-thumb:hover  {
+    background: #E3B038;
+  }
+  
+  .custom-range::-ms-thumb:hover  {
+    background: #E3B038;
+  }
+
+  .custom-range::-webkit-slider-thumb {
+    background: #E3B038;
+    
+  }
+  
+  .custom-range::-moz-range-thumb  {
+    background: #E3B038;
+  }
+  
+  .custom-range::-ms-thumb  {
+    background: #E3B038;
+  }
+
  .detailsSubscription  .card-body {
     background: none;
  }
