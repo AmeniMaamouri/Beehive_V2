@@ -31,3 +31,10 @@
 .pull-left {
     margin-left: 3%;
 }
+
+@media(max-width:458px){
+    .footer {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+}

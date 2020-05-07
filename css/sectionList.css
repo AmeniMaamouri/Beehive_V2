@@ -25,6 +25,8 @@
 
 .subscription img {
     margin-left: 12px !important;
+ 
+    justify-content: center !important;
     margin-top: 10px;
     margin-bottom: 12px;
 }
@@ -39,11 +41,10 @@
     margin-left: 16px !important;
     margin-bottom: 12px;
 }
-.privateOffice p {
-    margin-left: -3px !important;
+.privateOffice p, .events p, .reservation p, .subscription p {
+    text-align: center !important;
   
 }
-
 
 .events img {
     margin-left: 25px !important;
@@ -51,10 +52,10 @@
     margin-bottom: 12px;
 }
 
-.events p {
+/* .events p {
     margin-left: 20px !important;
  
-}
+} */
 
 /* Active Page CSS */
 
@@ -111,15 +112,27 @@
 
 @media(max-width: 991px){
     .reservation, .privateOffice, .events, .subscription{
-        height: 140px;
+        height: 140px !important;
         padding: 15px 32px;
-        margin-left: 4% !important;
+       
     
     }
     .elements{
        justify-content: center;
         margin-left: 0% !important;
         margin-right: 2% !important;
+       
     }
 
+    .elements div{
+
+         font-size: 14px !important;
+     }
+
+}
+
+@media(max-width:1217px){
+    .privateOffice{
+        height: 180px;
+    }
 }

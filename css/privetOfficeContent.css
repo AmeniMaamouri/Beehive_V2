@@ -177,6 +177,11 @@
         margin-left: 28%;
     
     }
+    .toDate {
+        padding-left: 20px !important;
+        
+    }
+   
 }
 
 @media(max-width: 680px){
