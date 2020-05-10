@@ -1,24 +1,6 @@
 
-/* Subscription : Right Content */
+/* Reservation : Right Content */
 
-select {
-    border-radius: 15px !important;
-    min-height: 50px;
-    color: #E3B038 !important;
-    width: 250px !important;
-    font-weight: 500 !important;
-    background: url(../img/Dropdown.png) no-repeat right #ddd;
-    background-position-x: 95%;
-    -webkit-appearance: none;
-    font-family: 'Poppins', sans-serif;
-    -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
-}
-select option{
-    color:black !important;
-    border-radius: 15px !important;
-}
 
 .reservationHeader {
     margin-top: 40px;
