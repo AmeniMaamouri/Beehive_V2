@@ -51,12 +51,24 @@ body{
     border-radius: 7px;
     font-weight: bold;
 }
+.card-body button:hover {
+    transform: scale(1.05);
+}
 .branchesCards {
     margin-bottom: 100px;
 }
-.aboutImg {
-    margin-top: 25px;
+.art{
+    margin-top: 14px;
 }
+
+.cafe{
+    margin-top: 9px;
+}
+
+.about{
+    margin-top: 20px;
+}
+
 
 @media(max-width:1200px){
 
