@@ -3,16 +3,14 @@ html{
   
 }
 body{
-    background: url('../img/bgBranches.jpg') no-repeat;
-    background-size: 100%;
+    background: url('../img/bgBranches.jpg') no-repeat center center;
     min-height:100% !important;
-
-
-    -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
-    -o-background-size: 100% 100%;           /* Opera 9.5 */
--webkit-background-size: 100% 100%;           /* Safari 3.0 */
-       background-size: 100% 100%;        
-   
+    background-size: cover;
+    /* -moz-background-size: 100% 100%;          
+    -o-background-size: 100% 100%;         
+-webkit-background-size: 100% 100%;            */
+       /* background-size: 100% 100%;         */
+  
  
 }
 .branchesHeader p {
