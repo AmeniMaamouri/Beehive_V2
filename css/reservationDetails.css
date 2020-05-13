@@ -19,34 +19,49 @@
     color: #4D5560 !important;
 }
 
-.fa-calendar-alt, .fa-clock, .fa-hourglass-half, .fa-calendar-check, .fa-money-bill-alt {
+.fa-calendar-alt, .fa-clock, .fa-hourglass-half, .fa-calendar-check, .fa-money-bill-alt, .fa-building, .fa-clipboard {
     color: #E3B038;
      font-size: 25px;
      margin-right: 5px;
 
 
  }
+ 
+ select {
+    border-radius: 15px !important;
+    min-height: 40px;
+    color: black !important;
+    background: url(../img/Dropdown.png) no-repeat right #ddd;
+    background-position-x: 95%;
+    -webkit-appearance: none;
+    font-family: 'Poppins', sans-serif;
+    -moz-appearance: none;
+    text-indent: 1px;
+    font-size: 16px !important;
+    text-overflow: '';
+}
+select option{
+    color:black !important;
+    border-radius: 15px !important;
+}
 
  .fullDay {
-     margin-left: 8%;
+     margin-left: 67px;
      margin-top: 25px;
  }
 
-.promo {
-    margin-left: 6%;
-    margin-top: 13px !important;
-}
+
 
  .custom-switch {
     padding-left: 2.25rem;
     padding-bottom: 1rem; 
     margin-top: 26px;
     margin-left: 30px;
+    margin-bottom: 10px;
   
   }
 
- 
-  
+
   .custom-control-label { 
     padding-top: 0.5rem;
     padding-left: 2rem;
@@ -70,6 +85,20 @@
     box-shadow:none !important;
 }
   
+.promoCode{
+    margin-left: -16% !important;
+    margin-bottom: 25px;
+}
+
+.notes {
+    margin-bottom: 50px;
+}
+
+.fullDayCenter{
+    margin-bottom: 8px;
+    margin-top: 6px;
+}
+
   .custom-switch .custom-control-label::after {
     top: calc(-0.3rem + 2px);
      
@@ -113,8 +142,12 @@
     margin-right: 5px;
     font-size: 18px;
     color: #222831;
+    text-align: center !important;
+    justify-content: center !important;
     
 }
+
+
 
 .range{
     width: 63%;
@@ -129,7 +162,7 @@
 }
 
 .duration {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .durationImg {
     margin-right: 2.5%;
@@ -163,7 +196,7 @@
   }
 
 .card:nth-of-type(1) {
-    margin-top: 30px;
+    margin-top: 50px;
     width: 28% !important;
     border: none !important;
     box-shadow: 0 20px 20px rgba(0,0,0,.05);
@@ -180,11 +213,11 @@
     border: none !important;
     box-shadow: 0 20px 20px rgba(0,0,0,.05);
     font-family: 'Poppins', sans-serif;
-    height: 550px;
+
     border-radius: 30px !important;
  }
 
- 
+
  
 
 .card-img-top{
@@ -206,8 +239,31 @@
 }
 
 
+
+
 .reservationCards {
     margin-top: 50px;
+}
+
+.reserveBtn {
+    outline: none;
+    text-decoration: none;
+    border: none !important;
+    background-color: #E3B038 !important;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: -40px;
+
+}
+
+.reserveBtn:hover {
+    transform: scale(1.05);
+}
+
+form{
+    margin-top: 10px;
 }
 
 @media(max-width: 510px){
@@ -245,6 +301,7 @@
         margin-right: 0px;
        
     }
+  
 }
 
 @media(max-width: 1587px){
@@ -293,16 +350,6 @@
         margin-top: 20px;
     }
 
-    .promo{
-        width: 80%;
-        margin: 0 auto;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .promo {
-        margin-left: 8%;
-    }
 
 }
 
@@ -310,6 +357,7 @@
 
     .card:nth-of-type(1){
         width: 50% !important;
+        margin-top: 30px !important;
     }
 
     .card:nth-of-type(2){
@@ -318,10 +366,8 @@
       
      }
 
-     .promo {
-        margin-left: 20%;
-        margin-top: 15px;
-    }
+
+  
 
 }
 
@@ -329,10 +375,7 @@
     .card:nth-of-type(1){
         width: 60% !important;
     }
-    .promo {
-        margin-left: 16%;
-        
-    }
+ 
     
 }
 
@@ -344,12 +387,7 @@
 
 }
 
-@media(max-width: 634px){
-    .promo {
-        margin-left: 10%;
-        
-    }
-}
+
 
 @media(max-width: 530px){
     .card:nth-of-type(1){
@@ -365,12 +403,6 @@
 
 }
 
-@media(max-width: 395px){
-    .promo {
-        margin-left: 6%;
-        
-    }
-}
 
 @media(max-width: 360px){
     .card:nth-of-type(1){
@@ -414,12 +446,18 @@
            margin-left: 40%;
    }
 
-   .promo {
-    margin-left: 10%;
-      margin-top: 0px !important;
-}
-.promo input {
-    width: 95%;
+
+
 }
 
+@media(max-width:1220px){
+    .promoCode{
+        margin-left: 0% !important;
+       
+       
+    }
+
+    .card:nth-of-type(1) {
+        margin-top: 80px;
+     }
 }
