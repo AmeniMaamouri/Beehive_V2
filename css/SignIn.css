@@ -71,11 +71,13 @@
 
  .register:hover{
     color: #707070;
-   
     text-decoration: none;
    
  }
 
+ .nav-item button{
+     box-shadow: none !important;
+ }
 
 .signInBtn {
     background-color: #E3B038;
@@ -88,10 +90,12 @@
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 20px !important;
+    
 }
 .signInBtn:hover {
     background-color: #E3B038;
     transform: scale(1.03);
+   
 }
 
 @media(max-width: 991px){
