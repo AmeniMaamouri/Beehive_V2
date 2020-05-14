@@ -58,4 +58,7 @@
     .navbar-nav{
         margin-top: 15px;
     }
+    .nav-link:hover{
+        transform: none !important;
+    }
 }
