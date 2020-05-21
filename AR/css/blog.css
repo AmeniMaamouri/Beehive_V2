@@ -1,0 +1,178 @@
+
+/* Blog */
+
+.content {
+    margin-top: 60px;
+    
+}
+.blogHeader p {
+   
+    font-weight: 800;
+    font-size: 30px;
+    color: #3B3B3B !important;
+}
+
+
+
+.card {
+    margin-top: 30px;
+    width: 25% !important;
+    border: none !important;
+    box-shadow: 0 20px 20px rgba(0,0,0,.05);
+  
+    height: 550px;
+    border-radius: 30px !important;
+  
+   
+ }
+ 
+
+.card-img-top{
+   height: 60%;
+    border-radius: 30px 30px 0 0;
+}
+
+.priceReservation{
+    font-size: 18px;
+    color: #E3B038 !important;
+    font-weight: 600;
+}
+
+.cardReservation-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card-body p {
+    margin-top: 10px;
+}
+.card-body button {
+    outline: none;
+    text-decoration: none;
+    border: none;
+    background-color: #E3B038 !important;
+    color: white;
+    padding: 8px 55px;
+    border-radius: 30px;
+    font-size: 17px;
+    margin-top: 20px;
+
+}
+
+.card-body button:hover {
+    transform: scale(1.05);
+}
+.blogCards {
+    margin-top: 10px;
+}
+
+
+
+
+@media(max-width: 1018px){
+
+    .card-body button {
+        padding: 10px 20px;
+    }
+}
+
+
+@media(max-width: 991px){
+    .card-body button {
+        padding: 10px 25px;
+    }
+
+    .blogCards {
+        margin-top: 8px;
+    }
+    
+}
+
+
+
+@media(max-width:1500px){
+    .card {
+       
+        width: 28% !important;
+ 
+      
+       
+     }
+}
+@media(max-width:1300px){
+    .card {
+       
+        width: 29% !important;
+ 
+    
+     }
+}
+@media(max-width:1200px){
+    .card {
+        width: 30% !important;
+     }
+}
+@media(max-width:1154px){
+    .card {
+        width: 31% !important;
+     }
+     .card-img-top{
+        height: 55%;
+         border-radius: 30px 30px 0 0;
+     }
+}
+
+@media(max-width:1035px){
+    .card-body button {
+        margin-top: 0px;
+    }
+}
+
+
+@media(max-width:900px){
+    .card {
+        width: 43% !important;
+     }
+    .card-body button {
+            margin-top: 20px;
+        }
+}
+
+@media(max-width:750px){
+    .card {
+        width: 46% !important;
+     }
+
+     .card-body button {
+        margin-top: 0px;
+    }
+   
+}
+
+@media(max-width:650px){
+    .card {
+        width: 60% !important;
+     }
+    
+}
+
+@media(max-width:550px){
+    .card {
+        width: 70% !important;
+     }
+   
+}
+
+
+@media(max-width:450px){
+    .card {
+        width: 80% !important;
+     }
+   
+}
+@media(max-width:350px){
+    .card {
+        width: 100% !important;
+     }
+   
+}
