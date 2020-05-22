@@ -13,11 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
   <!-- CSS Style -->
-  <link rel="stylesheet" href="./css/navbar/signOutLinks.css" />
-  <link rel="stylesheet" href="./css/footer.css" />
-  <link rel="stylesheet" href="./css/blog.css" />
-  <link rel="stylesheet" href="./css/globalStyle.css" />
-  <link rel="stylesheet" href="./css/SignIn.css" />
+
+  <link rel="stylesheet" href="./style/blog.css" />
+  
 
   <script src="https://kit.fontawesome.com/7d85ced938.js"></script>
   <title>Beehive</title>
@@ -31,15 +29,16 @@
     <nav class="navbar ml-auto navbar-expand-lg">
 
       <button class="navbar-toggler tooggleBtnSmall" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-    <a class="navbar-brand logoImgSmall" href="#"><img alt='Logo Beehive' src="./img/logo.png" /></a>
-       
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <a class="navbar-brand logoImgSmall" href="#"><img alt='Logo Beehive' src="./img/logo.png" /></a>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <button type="button" class="btn btn-primary btnModal " data-toggle="modal" data-target="#exampleModalCenter">
+            <button type="button" class="btn btn-primary btnModal " data-toggle="modal"
+              data-target="#exampleModalCenter">
               تسجيل الدخول
             </button>
           </li>
@@ -50,49 +49,51 @@
       </div>
 
       <button class="navbar-toggler logoImgLarge" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-    <a class="navbar-brand logoImgLarge" href="#"><img alt='Logo Beehive' src="./img/logo.png" /></a>
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <a class="navbar-brand logoImgLarge" href="#"><img alt='Logo Beehive' src="./img/logo.png" /></a>
 
     </nav>
   </div>
 
 
   <!-- Modal : Sign In-->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-body text-center">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i aria-hidden="true" class="fas fa-times"></i>
-        </button>
-        <img src="./img/logo2.png" alt="logo"/> 
-        <h1>تسجيل الدخول</h1>
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i aria-hidden="true" class="fas fa-times"></i>
+          </button>
+          <img src="./img/logo2.png" alt="logo" />
+          <h1>تسجيل الدخول</h1>
 
-        <form>
-          <div class="form-group">
-           
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="البريد الإلكتروني">
-            
-          </div>
-          <div class="form-group">
-           
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="كلمة السر">
-            <a href="#">هل نسيت كلمة المرور ؟</a>
-          </div>
-          
-       
-              <button type="submit" class="btn btn-primary col-12 signInBtn">تسجيل الدخول</button>
-              <a class="register" href="#">تسجيل</a>
-      
-        </form>
+          <form>
+            <div class="form-group">
+
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="البريد الإلكتروني">
+
+            </div>
+            <div class="form-group">
+
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="كلمة السر">
+              <a href="#">هل نسيت كلمة المرور ؟</a>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary col-12 signInBtn">تسجيل الدخول</button>
+            <a class="register" href="#">تسجيل</a>
+
+          </form>
+
+        </div>
 
       </div>
-    
     </div>
   </div>
-</div>
 
 
   <!-- Content : -->
@@ -102,58 +103,63 @@
   <div id="content">
     <div class="container-fluid">
       <div class="row">
-        
+
         <div class="col-12 mx-sm-auto content">
-            
-                <div class="row blogHeader text-center d-flex justify-content-center">
-                    <p class="col-6-lg ">مدونتنا</p>
-             
+
+          <div class="row blogHeader text-center d-flex justify-content-center">
+            <p class="col-6-lg ">مدونتنا</p>
+
+          </div>
+
+          <div class="row blogCards d-flex justify-content-around text-center">
+
+            <div class="card mx-auto">
+              <img src="img/blogImg2.jpg" class="card-img-top">
+
+              <div class="card-body">
+                <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي
+                  لصناعة الطباعة والتنضيد هو ببساطة نص
+
+                </p>
+                <button>شاهد المزيد</button>
+
+
+              </div>
             </div>
 
-            <div class="row blogCards d-flex justify-content-around text-center">
+            <div class="card mx-auto">
+              <img src="img/blogImg.jpg" class="card-img-top">
 
-                <div class="card mx-auto" >
-                    <img src="img/blogImg2.jpg" class="card-img-top">
-                            
-                    <div class="card-body">
-                        <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص</p>
-                    
-                        <button>شاهد المزيد</button>
+              <div class="card-body">
+                <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي
+                  لصناعة الطباعة والتنضيد هو ببساطة نص</p>
 
 
-                    </div>
-                </div>
-
-                <div class="card mx-auto" >
-                    <img src="img/blogImg.jpg" class="card-img-top">
-                            
-                    <div class="card-body">
-                      <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص</p>
-
-                
-                        <button>شاهد المزيد</button>
-                
+                <button>شاهد المزيد</button>
 
 
-                    </div>
-                </div>
 
-                <div class="card mx-auto" >
-                    <img src="img/blogImg1.jpg" class="card-img-top">
-                            
-                    <div class="card-body">
-                      <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد</p>
-
-                    
-                        <button>شاهد المزيد</button>
-                        
-
-
-                    </div>
-                </div>
-
+              </div>
             </div>
-            
+
+            <div class="card mx-auto">
+              <img src="img/blogImg1.jpg" class="card-img-top">
+
+              <div class="card-body">
+                <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي
+                  لصناعة الطباعة والتنضيد هو ببساطة نص
+
+                </p>
+
+                <button>شاهد المزيد</button>
+
+
+
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
         <!-- */ right side -->
