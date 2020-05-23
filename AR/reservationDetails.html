@@ -28,27 +28,37 @@
   <!-- Navbar -->
 
   <div id='navbar'>
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#"><img alt='Logo Beehive' src="./img/logo.png" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <nav class="navbar ml-auto navbar-expand-lg">
+
+      <button class="navbar-toggler tooggleBtnSmall" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
+      <a class="navbar-brand logoImgSmall" href="#"><img alt='Logo Beehive' src="./img/logo.png" /></a>
+
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <button type="button" class="btn btn-primary nav-link" data-toggle="modal"
+            <button type="button" class="btn btn-primary btnModal " data-toggle="modal"
               data-target="#exampleModalCenter">
-              Login
+              تسجيل الدخول
             </button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Register</a>
+            <a class="nav-link" href="#">تسجيل</a>
           </li>
         </ul>
       </div>
+
+      <button class="navbar-toggler logoImgLarge" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <a class="navbar-brand logoImgLarge" href="#"><img alt='Logo Beehive' src="./img/logo.png" /></a>
+
     </nav>
   </div>
+
 
   <!-- Modal : Sign In-->
   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -60,24 +70,24 @@
             <i aria-hidden="true" class="fas fa-times"></i>
           </button>
           <img src="./img/logo2.png" alt="logo" />
-          <h1>Sign in</h1>
+          <h1>تسجيل الدخول</h1>
 
           <form>
             <div class="form-group">
 
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Email">
+                placeholder="البريد الإلكتروني">
 
             </div>
             <div class="form-group">
 
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-              <a href="#">Forgot password ?</a>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="كلمة السر">
+              <a href="#">هل نسيت كلمة المرور ؟</a>
             </div>
 
 
-            <button type="submit" class="btn btn-primary col-12 signInBtn">Login</button>
-            <a class="register" href="#">Register</a>
+            <button type="submit" class="btn btn-primary col-12 signInBtn">تسجيل الدخول</button>
+            <a class="register" href="#">تسجيل</a>
 
           </form>
 
@@ -95,24 +105,24 @@
   <div id="content">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-2">
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-2 smallDeviceSectionList">
           <div class="sidebar-sticky">
             <div class="row elements">
               <div class="subscription col-xs-3 ">
                 <img alt='Subscription' src="./img/subscriptionImg.svg" />
-                <p>Subscription</p>
+                <p>اشتراك</p>
               </div>
               <div class="reservation col-xs-3  activePage">
                 <img alt='Reservation' src="./img/reservationImg.svg" />
-                <p>Reservation</p>
+                <p>حجز</p>
               </div>
               <div class="privateOffice col-xs-3 ">
                 <img alt='Private Office' src="./img/privateOfficeImg.svg" />
-                <p>Privet Office</p>
+                <p>مكتب خاص</p>
               </div>
               <div class="events col-xs-3 ">
                 <img alt='Events' src="./img/eventImg.svg" />
-                <p>Events</p>
+                <p>الأحداث</p>
               </div>
             </div>
           </div>
@@ -123,7 +133,7 @@
         <div class="col-md-11 col-lg-9 mx-sm-auto  rightContent">
 
           <div class="row reservationHeader text-center d-flex justify-content-center">
-            <p class="col-6-lg ">Reservation details</p>
+            <p class="col-6-lg ">تفاصيل الحجز</p>
 
           </div>
 
@@ -133,9 +143,9 @@
               <img src="img/reservationImg1.jpg" class="card-img-top">
 
               <div class="card-body">
-                <h5 class="cardReservation-title">Open Space</h5>
-                <p>For 1 hour</p>
-                <p class="priceReservation">Today at 11:00 PM</p>
+                <h5 class="cardReservation-title">مساحة مفتوحة</h5>
+                <p>لمدة ساعة</p>
+                <p class="priceReservation">اليوم الساعة 11:00 مساءً</p>
 
 
 
@@ -146,24 +156,24 @@
 
 
               <div class="card-body">
-                <form>
+                <form dir="rtl">
                   <div class="row d-flex justify-content-around">
 
 
                     <div class="col-auto">
-                      <i class="far fa-calendar-alt"></i> <span>Date</span> <input type="date"
+                      <i class="far fa-calendar-alt"></i> <span>تاريخ</span> <input type="date"
                         style="background: white;" />
                     </div>
 
                     <div class="col-auto">
-                      <i class="far fa-clock"></i> <span>Time</span> <input type="time" style="background: white;">
+                      <i class="far fa-clock"></i> <span>زمن</span> <input type="time" style="background: white;">
                     </div>
 
                   </div>
 
                   <div class="row duration d-flex justify-content-center">
                     <div class="durationImg col-auto">
-                      <i class="fas fa-hourglass-half"></i> <span>Duration :</span>
+                      <i class="fas fa-hourglass-half"></i> <span> المدة الزمنية :</span>
                     </div>
                     <div class="numberOfHoursLg">2</div>
                     <div class="col-auto range">
@@ -174,7 +184,7 @@
 
                   <div class="row fullDayCenter">
                     <div class="fullDay col-auto">
-                      <i class="far fa-calendar-check "></i> <span>Full day</span>
+                      <i class="far fa-calendar-check "></i> <span> يوم كامل</span>
                     </div>
 
 
@@ -186,8 +196,7 @@
                   </div>
 
                   <div class="promoCode row d-flex justify-content-center">
-                    <label class="col-sm-5 col-form-label"><i class="far fa-money-bill-alt"></i><span> Promo
-                        Code</span></label>
+                    <label class="col-sm-5 col-form-label"><i class="far fa-money-bill-alt"></i><span> رمز ترويجي</span></label>
                     <div class="col-sm-5 ">
                       <input type="text" class="form-control" id="staticEmail">
                     </div>
@@ -195,45 +204,30 @@
                   </div>
 
                   <div class="promoCode row d-flex justify-content-center">
-                    <label class="col-sm-5 col-form-label"><i class="far fa-building"></i><span> Branch</span></label>
+                    <label class="col-sm-5 col-form-label"><i class="far fa-building"></i><span>فرع شجرة </span></label>
                     <div class="col-sm-5 ">
                       <select class="form-control" id="Select">
-                        <option value="1" selected>Ar Riyadh Branch</option>
-                        <option value="2">Tunisie</option>
-                        <option value="3">Ar Riyadh</option>
-                        <option value="4">Ar Riyadh Branch</option>
-                    </select>
+                        <option value="1" selected>الرياض</option>
+                        <option value="2">تونس</option>
+                        <option value="3">الرياض</option>
+                        <option value="4">الرياض</option>
+                      </select>
                     </div>
 
                   </div>
 
                   <div class="promoCode row d-flex justify-content-center">
-                    <label class="col-sm-5 col-form-label"><i class="far fa-clipboard"></i><span> Notes</span></label>
+                    <label class="col-sm-5 col-form-label"><i class="far fa-clipboard"></i><span> ملاحظات</span></label>
                     <div class="col-sm-5 notes">
-                     
+
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                     </div>
 
                   </div>
 
-                  <button type="submit" class="btn btn-primary reserveBtn">Reserve</button>
+                  <button type="submit" class="btn btn-primary reserveBtn">طلب</button>
 
                 </form>
-                <!--  <div class="form-group  d-flex justify-content-center text-center row">
-                          <label for="staticEmail" class="col-sm-5 col-form-label"> <i class="far fa-money-bill-alt"></i><span> Promo Code</span></label>
-                          <div class="col-sm-6 ">
-                            <input type="text" class="form-control-plaintext" id="staticEmail" >
-                          </div>
-                        </div>-->
-
-                <!-- <div class="row promo d-flex justify-content-start">
-                          <div class="col-auto">
-                            <i class="far fa-money-bill-alt"></i> <span>Promo Code</span>
-                              <input type="text" >
-                          </div>
-                          
-                     
-                      </div> -->
 
 
               </div>
@@ -245,7 +239,29 @@
 
         </div>
 
-        <!-- */ right side -->
+
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-2 largeDeviceSectionList">
+          <div class="sidebar-sticky">
+            <div class="row elements">
+              <div class="subscription col-xs-3 ">
+                <img alt='Subscription' src="./img/subscriptionImg.svg" />
+                <p>اشتراك</p>
+              </div>
+              <div class="reservation col-xs-3  ">
+                <img alt='Reservation' src="./img/reservationImg.svg" />
+                <p>حجز</p>
+              </div>
+              <div class="privateOffice col-xs-3 activePage">
+                <img alt='Private Office' src="./img/privateOfficeImg.svg" />
+                <p>مكتب خاص</p>
+              </div>
+              <div class="events col-xs-3 ">
+                <img alt='Events' src="./img/eventImg.svg" />
+                <p>الأحداث</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -257,11 +273,12 @@
   <div id="footer">
     <div class="navbar navbar-default ">
       <div class="container-fluid footer">
-        <p class="navbar-text pull-left">© Beehive - 2020, All rights reserved.</p>
+        <p class="navbar-text pull-left smallDeviceFooter">© خلية النحل - 2020 ، جميع الحقوق محفوظة </p>
         <p class="pull-right "> <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"> <i class="fab fa-instagram"></i></a>
         </p>
+        <p class="navbar-text pull-left largeDeviceFooter">© خلية النحل - 2020 ، جميع الحقوق محفوظة </p>
       </div>
 
     </div>
