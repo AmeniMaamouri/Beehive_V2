@@ -166,9 +166,7 @@ html, body{
   
 }
 
-.smallDeviceSectionList{
-    display: none;
-}
+
 
 .events img {
     margin-left: 25px !important;
@@ -176,10 +174,7 @@ html, body{
     margin-bottom: 12px;
 }
 
-/* .events p {
-    margin-left: 20px !important;
- 
-} */
+
 
 /* Active Page CSS */
 
@@ -257,13 +252,9 @@ html, body{
          font-size: 14px !important;
      }
 
-     .smallDeviceSectionList{
-        display: initial;
-    }
+  
 
-    .largeDeviceSectionList{
-        display: none;
-    }
+
 
 }
 
@@ -427,6 +418,11 @@ select option{
     margin-top: 40px;
 }
 
+.subConfirmContainer, .filterSubscription, .btnSubConfirm{
+    flex-direction: row-reverse !important;
+}
+
+
 .rightContent {
     margin-top: 60px;
     
@@ -525,9 +521,7 @@ select option{
      background-size: 110px;
  }
 
- .smallDeviceFilter{
-     display: none;
- }
+
  .card-body h5 {
      font-size: 18px;
      color: black !important;
@@ -647,14 +641,7 @@ select option{
      }
 
 }
-@media(max-width:423px){
-    .smallDeviceFilter{
-        display: initial;
-    }
-    .largeDeviceFilter{
-        display: none;
-    }
-}
+
 @media(max-width: 1018px){
 
     .card-body button {
@@ -666,6 +653,9 @@ select option{
 @media(max-width: 991px){
     .card-body button {
         padding: 10px 25px;
+    }
+    .elements{
+        flex-direction: row-reverse !important;
     }
 
     .subscriptionCards {
@@ -792,9 +782,7 @@ select option{
     color: white;
 
 }
-.smallDeviceFooter {
-    display: none;
-}
+
 .pull-right {
     margin-left: 3%;
 }
@@ -816,11 +804,8 @@ select option{
         text-align: center !important;
         justify-content: center !important;
     }
-    .smallDeviceFooter {
-        display: initial;
-    }
 
-    .largeDeviceFooter{
-        display: none;
-    }
+}
+.footer{
+    flex-direction: row-reverse !important;
 }

@@ -2,7 +2,6 @@ html, body{
     background-color: #F3F3F7 !important;
 }
 
-
 /* Navbar */
 
 .navbar{
@@ -10,30 +9,16 @@ html, body{
     padding: 15px 0px !important;
 }
 .navbar-brand{
-    margin-right: 50px !important;
+    margin-left: 50px !important;
 }
 .nav-link {
     color: white;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     margin-left: 35px;
     background: none;
     outline: none;
     border: none;
-}
-
-.btnModal{
-    color: white;
-    font-size: 18px;
-    margin-left: 35px;
-    background: none;
-    outline: none;
-    border: none;
-}
-
-.btnModal:hover, .btnModal:focus, .btnModal:active, .btnModal:visited, .btnModal:link{
-    background: none !important;
-    outline: none !important;
-    border: none !important;
 }
 
 .nav-link:hover, .nav-link:focus, .nav-link:active, .nav-link:visited, .nav-link:link {
@@ -42,50 +27,35 @@ html, body{
     border: none !important;
 }
 
-.tooggleBtnSmall , .logoImgSmall {
-    display: none;
-}
 
 .nav-link:hover{
-    text-decoration: none;
-    color: white;
+    
     transform: scale(1.03);
-}
-.btnModal:hover{
-    transform: scale(1.03);
-    text-decoration: none;
-    color: white;
 }
 .navbar-nav {
     margin-right: 40px;
 }
-
+.nav-link:hover{
+    text-decoration: none;
+    color: white;
+}
 .navbar-toggler{
     color: white !important;
     outline: none !important;
-    margin-left: 20px !important;
+    margin-right: 20px !important;
     font-size: 25px !important;
 }
 
 @media (max-width: 520px){
     .navbar-brand{
-        margin-right: 7px !important;
+        margin-left: 17px !important;
     }
-    .navbar-toggler{
-        margin-left: 7px !important;
+    .nav-link {
+        margin-left: 20px !important;
     }
-    .btnModal{
-        margin-right: 10px !important;
-    }
-    .nav-link{
-        margin-right: 26px !important;
-    }
-   
- 
 }
-
 @media (max-width: 991px){
-    .nav-link, .btnModal {
+    .nav-link {
         margin-top: 5px;
         margin-left: 60px;
     }
@@ -95,48 +65,22 @@ html, body{
     .nav-link:hover{
         transform: none !important;
     }
-    .tooggleBtnSmall , .logoImgSmall {
-        display: initial;
-    }
-    .logoImgLarge, .logoImgLarge{
-        display: none;
-    }
-    .navbar-nav{
-       text-align: right !important;
-       justify-content: right !important;
-    }
-    .btnModal:hover{
-        transform: none;
-    }
-    .btnModal{
-        margin-right: 50px;
-    }
-    .nav-link{
-        margin-right: 64px;
-    }
 }
 
-/* Right Content CSS Fix */
+/* Left Content CSS Fix */
 
 
 .reservation, .privateOffice, .events, .subscription{
- 
+    font-family: 'Poppins', sans-serif;
     margin-top: 50px !important;
-    margin-left: 18% !important;
+    margin-left: 30%;
     background-color: white;
     padding: 30px 40px;
     box-shadow: 0 20px 20px rgba(0,0,0,.03);
     width: 180px;
     border-radius: 10px;
-    font-weight: bold;
     
 }
-
-.reservationContainer, .reservationCards {
-    flex-direction: row-reverse !important;
-}
-
-
 
 .reservation:hover, .privateOffice:hover, .events:hover, .subscription:hover {
     transform: scale(1.06);
@@ -146,7 +90,6 @@ html, body{
 
 #content p {
     color: #707070;
-    font-weight: bold;
 }
 
 .subscription img {
@@ -171,8 +114,6 @@ html, body{
     text-align: center !important;
   
 }
-
-
 
 .events img {
     margin-left: 25px !important;
@@ -203,18 +144,15 @@ html, body{
 
 @media (max-width: 1340px){
     .reservation, .privateOffice, .events, .subscription{
-        margin-right: 12% ;
-        margin-left: 0% !important;
+        margin-left: 12% !important;
     }
 
 }
 
 @media (max-width: 1588px){
     .reservation, .privateOffice, .events, .subscription{
-
+        margin-left: 20%;
         min-width: 165px;
-        margin-right: 12% ;
-        margin-left: 0% !important;
 
     }
 
@@ -223,10 +161,10 @@ html, body{
 @media (max-width: 1198px){
     .reservation, .privateOffice, .events, .subscription{
         padding: 30px 35px;
-        margin-right: 5% !important;
+        margin-left: 5% !important;
     }
     .elements{
-        margin-right: 5% !important;
+        margin-left: 5% !important;
     }
 
 }
@@ -234,11 +172,10 @@ html, body{
 @media (max-width: 1028px){
     .reservation, .privateOffice, .events, .subscription{
         padding: 30px 30px;
-        margin-left: -15px !important;
         width: 155px !important;
     }
     .elements{
-        margin-right: 1% !important;
+        margin-left: 1% !important;
     }
 }
 
@@ -251,9 +188,8 @@ html, body{
     }
     .elements{
        justify-content: center;
-        margin-right: 0% !important;
-        margin-left: 5% !important;
-        flex-direction: row-reverse !important;
+        margin-left: 0% !important;
+        margin-right: 2% !important;
        
     }
 
@@ -261,7 +197,6 @@ html, body{
 
          font-size: 14px !important;
      }
-
 
 }
 
@@ -271,136 +206,7 @@ html, body{
     }
 }
 
-/* Sign In CSS */
-
-.modal-body h1{
-    font-size: 25px;
-    font-weight: 800;
-    margin-top: 30px;
-  
-}
-
-.modal-body img{
-   
-    margin-top: 20px;
-}
-
-.modal-body form{
-
-    width: 60%;
-    text-align: center;
-    justify-content: center;
-    margin: 40px auto;
-}
-
-.modal-body form input{
-    background-color: #EBEAE9;
-    height: 45px !important;
-    border-radius: 40px;
-    padding-left: 30px;
-    color: #707070 !important;
- }
-
- .modal-body form input:hover{
-    background-color: #EBEAE9 !important;
- }
-
- .form-group {
-     text-align: right !important;
- }
- input[type=password]{
-     margin-bottom: 10px;
-     margin-top: 20px;
- }
- .form-group a{
-   color: #707070;
-   font-weight: 600;
-   text-decoration: none;
-}
-
-.register{
-    color: #707070;
-    font-weight: 600;
-    text-decoration: none;
-   
- }
-
- .modal-content  {
-    -webkit-border-radius: 20px !important;
-    -moz-border-radius: 20px !important;
-    border-radius: 20px !important; 
-}
-
-.fa-times {
-    margin-right: 30px !important;
-    margin-top: 20px !important;
-    font-size: 30px !important;
-    color: #E3B038;
-   
-}
-
-.close {
-    outline: none !important;
-    color: #E3B038;
-}
-
- .register:hover{
-    color: #707070;
-    text-decoration: none;
-   
- }
-
- .nav-item button{
-     box-shadow: none !important;
- }
-
-.signInBtn {
-    background-color: #E3B038;
-    outline: none;
-    padding: 10px 0px;
-    border: none;
-    border-radius: 30px;
-    font-size: 18px;
-  
-    font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 20px !important;
-    
-}
-.signInBtn:hover {
-    background-color: #E3B038;
-    transform: scale(1.03);
-   
-}
-
-@media(max-width: 991px){
-
-    .modal-body form{
-        width: 80%;
-    }
-
-}
-
-@media(max-width: 400px){
-
-    .modal-body form{
-        width: 95%;
-    }
-
-}
-
-@media(max-width: 350px){
-
-    .fa-times {
-        margin-right: 10px !important;
-        font-size: 25px !important;
-        margin-top: 33px !important;
-       
-    }
-
-}
-
-/* Reservation : Left Content */
+/* Reservation : Right Content */
 
 
 .reservationHeader {
@@ -427,13 +233,9 @@ html, body{
 
  }
 
- .cardReservation-title {
-     font-size: 20px !important;
- }
-
 .card {
     margin-top: 30px;
-    width: 350px !important;
+    width: 400px !important;
     border: none !important;
     box-shadow: 0 20px 20px rgba(0,0,0,.05);
     font-family: 'Poppins', sans-serif;
@@ -445,7 +247,7 @@ html, body{
  
 
 .card-img-top{
-   height: 55%;
+   height: 62%;
     border-radius: 30px 30px 0 0;
 }
 
@@ -465,10 +267,9 @@ html, body{
     border: none;
     background-color: #222831 !important;
     color: white;
-    font-weight: bold;
     padding: 8px 40px;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 5px;
 
 }
@@ -523,7 +324,7 @@ html, body{
 
     
 .card {
-    width: 280px !important;
+    width: 300px !important;
  }
 
 }
@@ -539,13 +340,13 @@ html, body{
 
 @media(max-width:1800px){
     .card {
-        width: 280px !important;
+        width: 330px !important;
      }
 }
 
 @media(max-width:1400px){
     .card {  
-        width: 280px !important;
+        width: 310px !important;
      }
 }
 
@@ -571,13 +372,14 @@ html, body{
       width: 300px !important;
   }
 }
-
 /* footer */
 
 #footer{
     margin-top: 38px !important;
     color: white;
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+  
     display: block;
     align-items: center;
    
@@ -590,13 +392,13 @@ html, body{
 }
 
 .pull-right a i {
-    margin-left: 15px;
+    margin-right: 15px;
     color: white;
 
 }
 
 .pull-right {
-    margin-left: 3%;
+    margin-right: 3%;
 }
 
 #footer p i {
@@ -608,7 +410,7 @@ html, body{
 
 }
 .pull-left {
-    margin-right: 3%;
+    margin-left: 3%;
 }
 
 @media(max-width:458px){
@@ -616,8 +418,4 @@ html, body{
         text-align: center !important;
         justify-content: center !important;
     }
- 
-}
-.footer{
-    flex-direction: row-reverse !important;
 }

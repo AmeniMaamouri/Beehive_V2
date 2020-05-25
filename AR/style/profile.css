@@ -22,6 +22,9 @@ html, body{
     border: none;
 }
 
+.profileContainer, .sub, .event {
+    flex-direction: row-reverse;
+}
 .nav-link:hover, .nav-link:focus, .nav-link:active, .nav-link:visited, .nav-link:link {
     background: none !important;
     outline: none !important;
@@ -144,9 +147,6 @@ html, body{
    border-radius: 50%;
    margin-top: 30px;
 }
-.smallDeviceUser {
-    display: none;
-}
 
 .moreInfo{
     text-decoration: underline;
@@ -179,9 +179,7 @@ html, body{
     margin-top: 50px;
    
 }
-.smallDeviceImg {
-    display: none;
-}
+
 
 .subInformation{
     border-radius: 10px !important;
@@ -338,6 +336,14 @@ th {
 
 }
 
+@media(max-width:320px){
+
+   .dateExpires {
+       text-align: center !important;
+   }
+
+}
+
 @media(max-width:991px){
 
     .userInformations p {
@@ -373,12 +379,6 @@ th {
         height: auto;
     }
 
-    .smallDeviceUser{
-        display: initial;
-    }
-    .largeDeviceUser{
-        display: none;
-    }
 }
 
 @media(max-width:592px){
@@ -411,14 +411,7 @@ th {
 
 }
 
-@media(max-width:320px){
-    .smallDeviceImg {
-        display: initial;
-    }
-    .largeDeviceImg {
-        display: none;
-    }
-}
+
 
 @media(max-width:591px){
     .eventImg{
@@ -451,9 +444,7 @@ th {
     color: white;
 
 }
-.smallDeviceFooter {
-    display: none;
-}
+
 .pull-right {
     margin-left: 3%;
 }
@@ -475,11 +466,9 @@ th {
         text-align: center !important;
         justify-content: center !important;
     }
-    .smallDeviceFooter {
-        display: initial;
-    }
 
-    .largeDeviceFooter{
-        display: none;
-    }
+
+}
+.footer{
+    flex-direction: row-reverse !important;
 }

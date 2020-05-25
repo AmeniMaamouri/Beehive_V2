@@ -166,9 +166,7 @@ html, body{
   
 }
 
-.smallDeviceSectionList{
-    display: none;
-}
+
 
 .events img {
     margin-left: 25px !important;
@@ -253,13 +251,7 @@ html, body{
          font-size: 14px !important;
      }
 
-     .smallDeviceSectionList{
-        display: initial;
-    }
-
-    .largeDeviceSectionList{
-        display: none;
-    }
+  
 
 }
 
@@ -420,6 +412,11 @@ select option{
     border-radius: 15px !important;
 }
 
+.filterSubscription, .subDetailsContainer, .btnSubDetails {
+    flex-direction: row-reverse !important;
+}
+
+
 .filterSubscription {
     margin-top: 40px;
 }
@@ -435,9 +432,7 @@ select option{
     margin-left: 40px;
     color: black !important;
 }
-.smallDeviceFilter{
-    display: none;
-}
+
 
 .card:nth-of-type(1) {
     margin-top: 30px;
@@ -563,6 +558,7 @@ select option{
     padding: 10px 40px !important;
 }
 
+
 .card-body button {
     outline: none;
     text-decoration: none;
@@ -667,6 +663,9 @@ select option{
     .subscriptionCards {
         margin-top: 10px;
     }
+    .elements{
+        flex-direction: row-reverse !important;
+    }
 
     .filterSubscription {
         margin-top: 10px;
@@ -687,14 +686,6 @@ select option{
 
 }
 
-@media(max-width:423px){
-    .smallDeviceFilter{
-        display: initial;
-    }
-    .largeDeviceFilter{
-        display: none;
-    }
-}
 
 @media(max-width:635px){
 
@@ -764,9 +755,7 @@ select option{
     color: white;
 
 }
-.smallDeviceFooter {
-    display: none;
-}
+
 .pull-right {
     margin-left: 3%;
 }
@@ -788,11 +777,8 @@ select option{
         text-align: center !important;
         justify-content: center !important;
     }
-    .smallDeviceFooter {
-        display: initial;
-    }
-
-    .largeDeviceFooter{
-        display: none;
-    }
+  
+}
+.footer{
+    flex-direction: row-reverse !important;
 }
