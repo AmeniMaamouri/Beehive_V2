@@ -1,200 +1,3 @@
-html, body{
-    background-color: #F3F3F7 !important;
-}
-
-
-/* Navbar */
-
-.navbar{
-    background-color: #3B3B3B;
-    padding: 15px 0px !important;
-}
-.navbar-brand{
-    margin-left: 50px !important;
-}
-.nav-link {
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    margin-left: 35px;
-    background: none;
-    outline: none;
-    border: none;
-}
-
-.nav-link:hover, .nav-link:focus, .nav-link:active, .nav-link:visited, .nav-link:link {
-    background: none !important;
-    outline: none !important;
-    border: none !important;
-}
-
-
-.nav-link:hover{
-    
-    transform: scale(1.03);
-}
-.navbar-nav {
-    margin-right: 40px;
-}
-.nav-link:hover{
-    text-decoration: none;
-    color: white;
-}
-.navbar-toggler{
-    color: white !important;
-    outline: none !important;
-    margin-right: 20px !important;
-    font-size: 25px !important;
-}
-
-@media (max-width: 520px){
-    .navbar-brand{
-        margin-left: 17px !important;
-    }
-    .nav-link {
-        margin-left: 20px !important;
-    }
-}
-@media (max-width: 991px){
-    .nav-link {
-        margin-top: 5px;
-        margin-left: 60px;
-    }
-    .navbar-nav{
-        margin-top: 15px;
-    }
-    .nav-link:hover{
-        transform: none !important;
-    }
-}
-
-.modal-body h1{
-    font-size: 25px;
-    font-weight: 800;
-    margin-top: 30px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.modal-body img{
-   
-    margin-top: 20px;
-}
-
-.modal-body form{
-
-    width: 60%;
-    text-align: center;
-    justify-content: center;
-    margin: 40px auto;
-}
-
-.modal-body form input{
-    background-color: #EBEAE9;
-    height: 45px !important;
-    border-radius: 40px;
-    padding-left: 30px;
-    color: #707070 !important;
- }
-
- .modal-body form input:hover{
-    background-color: #EBEAE9 !important;
- }
-
- .form-group {
-     text-align: right !important;
- }
- input[type=password]{
-     margin-bottom: 10px;
-     margin-top: 20px;
- }
- .form-group a{
-   color: #707070;
-   font-weight: 600;
-   text-decoration: none;
-}
-
-.register{
-    color: #707070;
-    font-weight: 600;
-    text-decoration: none;
-   
- }
-
- .modal-content  {
-    -webkit-border-radius: 20px !important;
-    -moz-border-radius: 20px !important;
-    border-radius: 20px !important; 
-}
-
-.fa-times {
-    margin-right: 30px !important;
-    margin-top: 20px !important;
-    font-size: 30px !important;
-    color: #E3B038;
-   
-}
-
-.close {
-    outline: none !important;
-    color: #E3B038;
-}
-
- .register:hover{
-    color: #707070;
-    text-decoration: none;
-   
- }
-
- .nav-item button{
-     box-shadow: none !important;
- }
-
-.signInBtn {
-    background-color: #E3B038;
-    outline: none;
-    padding: 10px 0px;
-    border: none;
-    border-radius: 30px;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 20px !important;
-    
-}
-.signInBtn:hover {
-    background-color: #E3B038;
-    transform: scale(1.03);
-   
-}
-
-@media(max-width: 991px){
-
-    .modal-body form{
-        width: 80%;
-    }
-
-}
-
-@media(max-width: 400px){
-
-    .modal-body form{
-        width: 95%;
-    }
-
-}
-
-@media(max-width: 350px){
-
-    .fa-times {
-        margin-right: 10px !important;
-        font-size: 25px !important;
-        margin-top: 33px !important;
-       
-    }
-
-}
-
 
 /* Blog */
 
@@ -211,7 +14,7 @@ html, body{
 
 
 
-.card {
+#blog .card {
     margin-top: 30px;
     width: 25% !important;
     border: none !important;
@@ -224,26 +27,26 @@ html, body{
  }
  
 
-.card-img-top{
+ #blog .card-img-top{
    height: 60%;
     border-radius: 30px 30px 0 0;
 }
 
-.priceReservation{
+#blog .priceReservation{
     font-size: 18px;
     color: #E3B038 !important;
     font-weight: 600;
 }
 
-.cardReservation-title {
+#blog .cardReservation-title {
     font-weight: bold;
     font-size: 18px;
 }
 
-.card-body p {
+#blog .card-body p {
     margin-top: 10px;
 }
-.card-body button {
+#blog .card-body button {
     outline: none;
     text-decoration: none;
     border: none;
@@ -256,10 +59,10 @@ html, body{
 
 }
 
-.card-body button:hover {
+#blog .card-body button:hover {
     transform: scale(1.05);
 }
-.blogCards {
+#blog .blogCards {
     margin-top: 10px;
 }
 
@@ -268,18 +71,18 @@ html, body{
 
 @media(max-width: 1018px){
 
-    .card-body button {
+    #blog .card-body button {
         padding: 10px 20px;
     }
 }
 
 
 @media(max-width: 991px){
-    .card-body button {
+    #blog  .card-body button {
         padding: 10px 25px;
     }
 
-    .blogCards {
+    #blog .blogCards {
         margin-top: 8px;
     }
     
@@ -288,7 +91,7 @@ html, body{
 
 
 @media(max-width:1500px){
-    .card {
+    #blog  .card {
        
         width: 28% !important;
  
@@ -297,7 +100,7 @@ html, body{
      }
 }
 @media(max-width:1300px){
-    .card {
+    #blog .card {
        
         width: 29% !important;
  
@@ -305,56 +108,56 @@ html, body{
      }
 }
 @media(max-width:1200px){
-    .card {
+    #blog .card {
         width: 30% !important;
      }
 }
 @media(max-width:1154px){
-    .card {
+    #blog  .card {
         width: 31% !important;
      }
-     .card-img-top{
+     #blog  .card-img-top{
         height: 55%;
          border-radius: 30px 30px 0 0;
      }
 }
 
 @media(max-width:1035px){
-    .card-body button {
+    #blog .card-body button {
         margin-top: 0px;
     }
 }
 
 
 @media(max-width:900px){
-    .card {
+    #blog  .card {
         width: 43% !important;
      }
-    .card-body button {
+     #blog .card-body button {
             margin-top: 20px;
         }
 }
 
 @media(max-width:750px){
-    .card {
+    #blog .card {
         width: 46% !important;
      }
 
-     .card-body button {
+     #blog  .card-body button {
         margin-top: 0px;
     }
    
 }
 
 @media(max-width:650px){
-    .card {
+    #blog .card {
         width: 60% !important;
      }
     
 }
 
 @media(max-width:550px){
-    .card {
+    #blog .card {
         width: 70% !important;
      }
    
@@ -362,62 +165,14 @@ html, body{
 
 
 @media(max-width:450px){
-    .card {
+    #blog  .card {
         width: 80% !important;
      }
    
 }
 @media(max-width:350px){
-    .card {
+    #blog .card {
         width: 100% !important;
      }
    
-}
-
-/* footer */
-
-#footer{
-    margin-top: 38px !important;
-    color: white;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-  
-    display: block;
-    align-items: center;
-   
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.footer p {
-    margin-top: 18px;
-}
-
-.pull-right a i {
-    margin-right: 15px;
-    color: white;
-
-}
-
-.pull-right {
-    margin-right: 3%;
-}
-
-#footer p i {
-    transition: 0.4s;
-    cursor: pointer;
-}
-#footer p i:hover {
-    transform: scale(1.3);
-
-}
-.pull-left {
-    margin-left: 3%;
-}
-
-@media(max-width:458px){
-    .footer {
-        text-align: center !important;
-        justify-content: center !important;
-    }
 }

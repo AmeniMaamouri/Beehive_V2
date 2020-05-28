@@ -332,7 +332,15 @@ td{
 
 }
 
-@media(max-width:592px){
+@media(max-width:414px){
+    .event{
+        margin: auto !important;
+    }
+
+
+}
+
+@media(max-width:650px){
 
     .eventImg{
         margin-right: 35px;

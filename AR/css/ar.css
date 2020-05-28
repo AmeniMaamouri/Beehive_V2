@@ -308,7 +308,6 @@ html, body{
 .modal-body img{
    
     margin-top: 20px;
-   
 }
 
 .modal-body form{
@@ -318,7 +317,6 @@ html, body{
     justify-content: center;
     margin: 40px auto;
 }
-
 
 .modal-body form input{
     background-color: #EBEAE9;
@@ -624,7 +622,7 @@ html, body{
 }
 #blog .blogHeader p {
    
-    font-weight: 500;
+    font-weight: 800;
     font-size: 30px;
     color: #3B3B3B !important;
 }
@@ -953,8 +951,8 @@ html, body{
 }
 
 #privateOffice .txtPrivetOffice p {
-    color: #A6ADB4;
-    font-size: 18px;
+    color: rgb(142, 148, 155);
+    font-size: 17px !important;
     text-align: right ;
 }
 
@@ -1930,8 +1928,8 @@ input::-webkit-calendar-picker-indicator {
 }
 
 #reservationDetails .cardReservation-title {
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 20px;
     margin-top: 15px;
     margin-bottom: 17px;
 }
@@ -2946,7 +2944,6 @@ input::-webkit-calendar-picker-indicator {
 #event .txtEvent {
     padding-top: 30px;
     margin-right: 2%;
-    
     text-align: right !important;   
     
 }
@@ -2971,9 +2968,18 @@ input::-webkit-calendar-picker-indicator {
     color: #202124;
    
 }
+#event .txtEvent p, .txtEvent a {
+    
+    font-weight: 500;
 
+}
 
-#event .txtEvent h1,  .txtEvent a {
+#event .txtEvent p {
+    color: rgb(142, 148, 155);
+    font-size: 16px !important;
+}
+
+#event .txtEvent h1, #event .txtEvent a {
     font-weight: bold;
 }
 

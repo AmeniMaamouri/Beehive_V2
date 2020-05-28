@@ -5,20 +5,21 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="./css/index.css" />
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 
   <!-- CSS Style -->
+  <link rel="stylesheet" href="./css/ar.css" />
 
-  <link rel="stylesheet" href="./style/event.css" />
-  
-
-
+  <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/7d85ced938.js"></script>
+
   <title>Beehive</title>
 </head>
 
@@ -71,7 +72,7 @@
           <img src="./img/logo2.png" alt="logo" />
           <h1>تسجيل الدخول</h1>
 
-          <form>
+          <form dir="rtl">
             <div class="form-group">
 
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -102,293 +103,295 @@
 
   <div id="content">
     <div class="container-fluid">
-      <div class="row eventsContainer">
+      <div id="event">
+        <div class="row eventsContainer">
 
-        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-2 ">
-          <div class="sidebar-sticky">
-            <div class="row elements">
-              <div class="subscription col-xs-3 ">
-                <img alt='Subscription' src="./img/subscriptionImg.svg" />
-                <p>اشتراك</p>
-              </div>
-              <div class="reservation col-xs-3  activePage">
-                <img alt='Reservation' src="./img/reservationImg.svg" />
-                <p>حجز</p>
-              </div>
-              <div class="privateOffice col-xs-3 ">
-                <img alt='Private Office' src="./img/privateOfficeImg.svg" />
-                <p>مكتب خاص</p>
-              </div>
-              <div class="events col-xs-3 ">
-                <img alt='Events' src="./img/eventImg.svg" />
-                <p>الأحداث</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- left side -->
-
-        <div class="col-md-11 col-lg-9 mx-sm-auto rightContent">
-
-          <div class="row filterEvents text-center d-flex justify-content-end">
-            <div class="form-group col-6-lg ">
-              <select dir="rtl" class="form-control " id="Select">
-                <option value="1" selected>فرع الرياض</option>
-                <option value="2">تونس</option>
-                <option value="3">الرياض</option>
-                <option value="4">الرياض</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Carousel 1-->
-          <div class="row blog">
-            <div class="col-md-12">
-              <div id="blogCarousel" class="carousel slide" data-ride="carousel">
-
-                <ol class="carousel-indicators">
-                  <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#blogCarousel" data-slide-to="1"></li>
-                  <li data-target="#blogCarousel" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div id="events">
-                      <div class="container-fluid ">
-
-                        <div class="row d-flex justify-content-center event">
-                          
-                          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
-                            <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
-                          </div>
-                          
-                          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
-                            <h1>الوباء بوابة</h1>
-                            <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
-                            <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
-                              ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
-
-                              <div class="btnEvent d-flex justify-content-end row">
-                                <div class="col-lg-auto eventPrice">250 SR</div>
-                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
-                              
-                              </div>
-                          </div>
-                        </div>
-
-
-                     <div class="row d-flex justify-content-center event">
-                          
-                          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
-                            <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
-                          </div>
-                          
-                          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
-                            <h1>الوباء بوابة</h1>
-                            <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
-                            <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
-                              ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
-
-                           
-                              <div class="btnEvent d-flex justify-content-end row">
-                                <div class="col-lg-auto eventPrice">250 SR</div>
-                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
-                              
-                              </div>
-                          </div>   
-                        </div>
-
-
-                   <div class="row d-flex justify-content-center event">
-                          
-                          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
-                            <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
-                          </div>
-                          
-                          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
-                            <h1>الوباء بوابة</h1>
-                            <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
-                            <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
-                              ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
-
-                            
-                              <div class="btnEvent d-flex justify-content-end row">
-                                <div class="col-lg-auto eventPrice">250 SR</div>
-                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
-                              
-                              </div>
-                          </div>
-                       
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="carousel-item ">
-                    <div id="events">
-                      <div class="container-fluid ">
-                 
-                        <div class="row d-flex justify-content-center event">
-                          
-                          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
-                            <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
-                          </div>
-                          
-                          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
-                            <h1>الوباء بوابة</h1>
-                            <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
-                            <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
-                              ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
-
-                              <div class="btnEvent d-flex justify-content-end row">
-                                <div class="col-lg-auto eventPrice">250 SR</div>
-                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
-                              
-                              </div> 
-                          </div>
-                       
-                        </div>
-
-              
-                   <div class="row d-flex justify-content-center event">
-                          
-                          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
-                            <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
-                          </div>
-                          
-                          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
-                            <h1>الوباء بوابة</h1>
-                            <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
-                            <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
-                              ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
-
-                           
-                              <div class="btnEvent d-flex justify-content-end row">
-                                <div class="col-lg-auto eventPrice">250 SR</div>
-                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
-                              
-                              </div>
-                          </div>
-                       
-                        </div>
-
-               
-                   <div class="row d-flex justify-content-center event">
-                          
-                          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
-                            <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
-                          </div>
-                          
-                          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
-                            <h1>الوباء بوابة</h1>
-                            <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
-                            <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
-                              ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
-
-                          
-                              <div class="btnEvent d-flex justify-content-end row">
-                                <div class="col-lg-auto eventPrice">250 SR</div>
-                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
-                              
-                              </div> 
-                          </div>
-                       
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="carousel-item ">
-                    <div id="events">
-                      <div class="container-fluid ">
-             
-                   <div class="row d-flex justify-content-center event">
-                          
-                          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
-                            <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
-                          </div>
-                          
-                          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
-                            <h1>الوباء بوابة</h1>
-                            <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
-                            <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
-                              ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
-
-                           
-                              <div class="btnEvent d-flex justify-content-end row">
-                                <div class="col-lg-auto eventPrice">250 SR</div>
-                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
-                              
-                              </div> 
-                          </div>
-                       
-                        </div>
-
-                   
-                   <div class="row d-flex justify-content-center event">
-                          
-                          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
-                            <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
-                          </div>
-                          
-                          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
-                            <h1>الوباء بوابة</h1>
-                            <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
-                            <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
-                              ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
-
-                          
-                              <div class="btnEvent d-flex justify-content-end row">
-                                <div class="col-lg-auto eventPrice">250 SR</div>
-                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
-                              
-                              </div>
-                          </div>
-                       
-                        </div>
-
-
-                 
-                   <div class="row d-flex justify-content-center event">
-                          
-                          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
-                            <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
-                          </div>
-                          
-                          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
-                            <h1>الوباء بوابة</h1>
-                            <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
-                            <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
-                              ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
-
-                           
-                              <div class="btnEvent d-flex justify-content-end row">
-                                <div class="col-lg-auto eventPrice">250 SR</div>
-                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
-                              
-                              </div>
-                          </div>
-                       
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
+          <div class="col-md-12 col-xs-12 col-sm-12 col-lg-2 ">
+            <div class="sidebar-sticky">
+              <div class="row elements">
+                <div class="subscription col-xs-3 ">
+                  <img alt='Subscription' src="./img/subscriptionImg.svg" />
+                  <p>اشتراك</p>
+                </div>
+                <div class="reservation col-xs-3  activePage">
+                  <img alt='Reservation' src="./img/reservationImg.svg" />
+                  <p>حجز</p>
+                </div>
+                <div class="privateOffice col-xs-3 ">
+                  <img alt='Private Office' src="./img/privateOfficeImg.svg" />
+                  <p>مكتب خاص</p>
+                </div>
+                <div class="events col-xs-3 ">
+                  <img alt='Events' src="./img/eventImg.svg" />
+                  <p>الأحداث</p>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- left side -->
+
+          <div class="col-md-11 col-lg-9 mx-sm-auto rightContent">
+
+            <div class="row filterEvents text-center d-flex justify-content-end">
+              <div class="form-group col-6-lg ">
+                <select dir="rtl" class="form-control " id="Select">
+                  <option value="1" selected>فرع الرياض</option>
+                  <option value="2">تونس</option>
+                  <option value="3">الرياض</option>
+                  <option value="4">الرياض</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Carousel 1-->
+            <div class="row blog">
+              <div class="col-md-12">
+                <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                  <ol class="carousel-indicators">
+                    <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#blogCarousel" data-slide-to="1"></li>
+                    <li data-target="#blogCarousel" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Carousel items -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div id="events">
+                        <div class="container-fluid ">
+
+                          <div class="row d-flex justify-content-center event">
+
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
+                              <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
+                            </div>
+
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
+                              <h1>الوباء بوابة</h1>
+                              <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
+                              <p class="paragraphEvent">هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
+                                ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
+
+                              <div class="btnEvent d-flex justify-content-end row">
+                                <div class="col-lg-auto eventPrice">250 SR</div>
+                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="row d-flex justify-content-center event">
+
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
+                              <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
+                            </div>
+
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
+                              <h1>الوباء بوابة</h1>
+                              <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
+                              <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
+                                ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
+
+
+                              <div class="btnEvent d-flex justify-content-end row">
+                                <div class="col-lg-auto eventPrice">250 SR</div>
+                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="row d-flex justify-content-center event">
+
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
+                              <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
+                            </div>
+
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
+                              <h1>الوباء بوابة</h1>
+                              <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
+                              <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
+                                ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
+
+
+                              <div class="btnEvent d-flex justify-content-end row">
+                                <div class="col-lg-auto eventPrice">250 SR</div>
+                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="carousel-item ">
+                      <div id="events">
+                        <div class="container-fluid ">
+
+                          <div class="row d-flex justify-content-center event">
+
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
+                              <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
+                            </div>
+
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
+                              <h1>الوباء بوابة</h1>
+                              <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
+                              <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
+                                ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
+
+                              <div class="btnEvent d-flex justify-content-end row">
+                                <div class="col-lg-auto eventPrice">250 SR</div>
+                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
+
+                              </div>
+                            </div>
+
+                          </div>
+
+
+                          <div class="row d-flex justify-content-center event">
+
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
+                              <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
+                            </div>
+
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
+                              <h1>الوباء بوابة</h1>
+                              <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
+                              <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
+                                ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
+
+
+                              <div class="btnEvent d-flex justify-content-end row">
+                                <div class="col-lg-auto eventPrice">250 SR</div>
+                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
+
+                              </div>
+                            </div>
+
+                          </div>
+
+
+                          <div class="row d-flex justify-content-center event">
+
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
+                              <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
+                            </div>
+
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
+                              <h1>الوباء بوابة</h1>
+                              <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
+                              <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
+                                ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
+
+
+                              <div class="btnEvent d-flex justify-content-end row">
+                                <div class="col-lg-auto eventPrice">250 SR</div>
+                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
+
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="carousel-item ">
+                      <div id="events">
+                        <div class="container-fluid ">
+
+                          <div class="row d-flex justify-content-center event">
+
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
+                              <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
+                            </div>
+
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
+                              <h1>الوباء بوابة</h1>
+                              <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
+                              <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
+                                ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
+
+
+                              <div class="btnEvent d-flex justify-content-end row">
+                                <div class="col-lg-auto eventPrice">250 SR</div>
+                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
+
+                              </div>
+                            </div>
+
+                          </div>
+
+
+                          <div class="row d-flex justify-content-center event">
+
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
+                              <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
+                            </div>
+
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
+                              <h1>الوباء بوابة</h1>
+                              <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
+                              <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
+                                ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
+
+
+                              <div class="btnEvent d-flex justify-content-end row">
+                                <div class="col-lg-auto eventPrice">250 SR</div>
+                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
+
+                              </div>
+                            </div>
+
+                          </div>
+
+
+
+                          <div class="row d-flex justify-content-center event">
+
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 eventsImgs ">
+                              <img class="imgEvents wow pulse" src="img/eventsImg1.jpg">
+                            </div>
+
+                            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 txtEvent">
+                              <h1>الوباء بوابة</h1>
+                              <div class="eventDate">السبت ، 25 أبريل ، 11:00 صباحًا</div>
+                              <p>هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص وهمي لصناعة الطباعة والتنضيد هو
+                                ببساطة نص وهمي لصناعة الطباعة والتنضيد هو ببساطة نص </p>
+
+
+                              <div class="btnEvent d-flex justify-content-end row">
+                                <div class="col-lg-auto eventPrice">250 SR</div>
+                                <div class="btnBookNow col-lg-auto"> <a href="#">احجز الآن</a></div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
-
-      
-
       </div>
     </div>
   </div>
@@ -399,8 +402,8 @@
   <div id="footer">
     <div class="navbar navbar-default ">
       <div class="container-fluid footer">
-     
-        
+
+
         <p class="navbar-text pull-left ">© خلية النحل - 2020 ، جميع الحقوق محفوظة </p>
         <p class="pull-right "> <a href="#"><i class="fab fa-facebook-f"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>

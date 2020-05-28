@@ -1,29 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html id="branch" lang="en">
 
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="./css/index.css" />
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
   <!-- CSS Style -->
-  
+  <link rel="stylesheet" href="./css/ar.css" />
 
-
-  <link rel="stylesheet" href="./style/branches.css" />
-  
-
-
+  <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/7d85ced938.js"></script>
+
   <title>Beehive</title>
 </head>
 
-<body>
+<body class="branch">
 
   <!-- Navbar -->
 
@@ -72,7 +72,7 @@
           <img src="./img/logo2.png" alt="logo" />
           <h1>تسجيل الدخول</h1>
 
-          <form>
+          <form dir=rtl>
             <div class="form-group">
 
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -102,76 +102,77 @@
 
   <div id="content">
     <div class="container-fluid">
-      <div class="row">
+      <div id="branches">
+
+        <div class="row">
+          <div class="col-12  mx-sm-auto  rightContent">
+
+            <div class="row branchesHeader text-center d-flex justify-content-center">
+              <p>لدينا 4 فروع</p>
+
+            </div>
+            <div class="lineBg"><img src="./img/lineBranches.png" /></div>
+
+            <div class="row branchesCards d-flex justify-content-around text-center">
 
 
-        <div class="col-12  mx-sm-auto  rightContent">
 
-          <div class="row branchesHeader text-center d-flex justify-content-center">
-            <p>لدينا 4 فروع</p>
+
+
+
+              <div class="card container-fluid p-3 col-auto mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">مساحة العمل </h5>
+
+
+                  <img src="./img/PackageImg.png"> <br />
+
+                  <button>يزور</button>
+                </div>
+              </div>
+
+
+              <div class="card p-3 container-fluid col-auto mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">مقهى خلية النحل</h5>
+
+                  <img class="cafe" src="./img/cafe.png"> <br />
+
+                  <button>يزور</button>
+                </div>
+              </div>
+
+              <div class="card container-fluid p-3 col-auto mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">خلية النحل</h5>
+
+
+                  <img class="art" src="./img/art.png"> <br />
+
+                  <button>يزور</button>
+                </div>
+              </div>
+
+
+              <div class="card p-3  container-fluid col-auto mb-3">
+                <div class="card-body">
+                  <h5 class="card-title">حول خلية النحل</h5>
+
+                  <img class="about" src="./img/about.png" /> <br />
+
+                  <button>يزور</button>
+                </div>
+              </div>
+
+
+
+            </div>
 
           </div>
-          <div class="lineBg"><img src="./img/lineBranches.png" /></div>
 
-          <div class="row branchesCards d-flex justify-content-around text-center">
-
-
-
-
-         
-
-            <div class="card container-fluid p-3 col-auto mb-3">
-              <div class="card-body">
-                <h5 class="card-title">مساحة العمل </h5>
-
-
-                <img src="./img/PackageImg.png"> <br />
-
-                <button>يزور</button>
-              </div>
-            </div>
-
-              
-            <div class="card p-3 container-fluid col-auto mb-3">
-              <div class="card-body">
-                <h5 class="card-title">مقهى خلية النحل</h5>
-
-                <img class="cafe" src="./img/cafe.png"> <br />
-
-                <button>يزور</button>
-              </div>
-            </div>
-
-            <div class="card container-fluid p-3 col-auto mb-3">
-              <div class="card-body">
-                <h5 class="card-title">خلية النحل</h5>
-
-
-                <img class="art" src="./img/art.png"> <br />
-
-                <button>يزور</button>
-              </div>
-            </div>
-
-            
-            <div class="card p-3  container-fluid col-auto mb-3">
-              <div class="card-body">
-                <h5 class="card-title">حول خلية النحل</h5>
-
-                <img class="about" src="./img/about.png" /> <br />
-
-                <button>يزور</button>
-              </div>
-            </div>
-
-          
-
-          </div>
+          <!-- */ right side -->
 
         </div>
-
-        <!-- */ right side -->
-
       </div>
     </div>
   </div>
@@ -187,7 +188,7 @@
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"> <i class="fab fa-instagram"></i></a>
         </p>
-        
+
       </div>
 
     </div>

@@ -10,30 +10,16 @@ html, body{
     padding: 15px 0px !important;
 }
 .navbar-brand{
-    margin-right: 50px !important;
+    margin-left: 50px !important;
 }
 .nav-link {
     color: white;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     margin-left: 35px;
     background: none;
     outline: none;
     border: none;
-}
-
-.btnModal{
-    color: white;
-    font-size: 18px;
-    margin-left: 35px;
-    background: none;
-    outline: none;
-    border: none;
-}
-
-.btnModal:hover, .btnModal:focus, .btnModal:active, .btnModal:visited, .btnModal:link{
-    background: none !important;
-    outline: none !important;
-    border: none !important;
 }
 
 .nav-link:hover, .nav-link:focus, .nav-link:active, .nav-link:visited, .nav-link:link {
@@ -42,30 +28,46 @@ html, body{
     border: none !important;
 }
 
-.tooggleBtnSmall , .logoImgSmall {
-    display: none;
-}
 
 .nav-link:hover{
-    text-decoration: none;
-    color: white;
+    
     transform: scale(1.03);
-}
-.btnModal:hover{
-    transform: scale(1.03);
-    text-decoration: none;
-    color: white;
 }
 .navbar-nav {
     margin-right: 40px;
 }
-
+.nav-link:hover{
+    text-decoration: none;
+    color: white;
+}
 .navbar-toggler{
     color: white !important;
     outline: none !important;
-    margin-left: 20px !important;
+    margin-right: 20px !important;
     font-size: 25px !important;
 }
+
+@media (max-width: 520px){
+    .navbar-brand{
+        margin-left: 17px !important;
+    }
+    .nav-link {
+        margin-left: 20px !important;
+    }
+}
+@media (max-width: 991px){
+    .nav-link {
+        margin-top: 5px;
+        margin-left: 60px;
+    }
+    .navbar-nav{
+        margin-top: 15px;
+    }
+    .nav-link:hover{
+        transform: none !important;
+    }
+}
+
 
 /* CSS ADD FOR SIGN IN LINKS */
 
@@ -74,14 +76,12 @@ html, body{
 }
 
 .fa-user, .fa-sign-out-alt {
-    padding-left: 10px !important;
+    padding-right: 10px !important;
     color: #E3B038;
-    
 }
 
 .dropdown-item {
     font-weight: 500;
-    text-align: right !important;
 }
 
 @media (max-width: 991px){
@@ -95,77 +95,21 @@ html, body{
 
 }
 
-@media (max-width: 520px){
-    .navbar-brand{
-        margin-right: 7px !important;
-    }
-    .navbar-toggler{
-        margin-left: 7px !important;
-    }
-    .btnModal{
-        margin-right: 10px !important;
-    }
-    .nav-link{
-        margin-right: 26px !important;
-    }
-   
- 
-}
-
-@media (max-width: 991px){
-    .nav-link, .btnModal {
-        margin-top: 5px;
-        margin-left: 60px;
-    }
-    .navbar-nav{
-        margin-top: 15px;
-    }
-    .nav-link:hover{
-        transform: none !important;
-    }
-    .elements{
-        flex-direction: row-reverse !important;
-    }
-    .tooggleBtnSmall , .logoImgSmall {
-        display: initial;
-    }
-    .logoImgLarge, .logoImgLarge{
-        display: none;
-    }
-    .navbar-nav{
-       text-align: right !important;
-       justify-content: right !important;
-    }
-    .btnModal:hover{
-        transform: none;
-    }
-    .btnModal{
-        margin-right: 50px;
-    }
-    .nav-link{
-        margin-right: 64px;
-    }
-}
-
-
-/* Right Content CSS Fix */
+/* Left Content CSS Fix */
 
 
 .reservation, .privateOffice, .events, .subscription{
- 
+    font-family: 'Poppins', sans-serif;
     margin-top: 50px !important;
-    margin-left: 18% !important;
+    margin-left: 30%;
     background-color: white;
     padding: 30px 40px;
     box-shadow: 0 20px 20px rgba(0,0,0,.03);
     width: 180px;
     border-radius: 10px;
-    font-weight: bold;
     
 }
-.subscriptionCards, .filterSubscription, .subscriptionContainer {
-    flex-direction: row-reverse !important;
-}
+
 .reservation:hover, .privateOffice:hover, .events:hover, .subscription:hover {
     transform: scale(1.06);
     cursor: pointer;
@@ -174,7 +118,6 @@ html, body{
 
 #content p {
     color: #707070;
-    font-weight: bold;
 }
 
 .subscription img {
@@ -199,8 +142,6 @@ html, body{
     text-align: center !important;
   
 }
-
-
 
 .events img {
     margin-left: 25px !important;
@@ -228,18 +169,15 @@ html, body{
 
 @media (max-width: 1340px){
     .reservation, .privateOffice, .events, .subscription{
-        margin-right: 12% ;
-        margin-left: 0% !important;
+        margin-left: 12% !important;
     }
 
 }
 
 @media (max-width: 1588px){
     .reservation, .privateOffice, .events, .subscription{
-
+        margin-left: 20%;
         min-width: 165px;
-        margin-right: 12% ;
-        margin-left: 0% !important;
 
     }
 
@@ -248,10 +186,10 @@ html, body{
 @media (max-width: 1198px){
     .reservation, .privateOffice, .events, .subscription{
         padding: 30px 35px;
-        margin-right: 5% !important;
+        margin-left: 5% !important;
     }
     .elements{
-        margin-right: 5% !important;
+        margin-left: 5% !important;
     }
 
 }
@@ -259,11 +197,10 @@ html, body{
 @media (max-width: 1028px){
     .reservation, .privateOffice, .events, .subscription{
         padding: 30px 30px;
-        margin-left: -15px !important;
         width: 155px !important;
     }
     .elements{
-        margin-right: 1% !important;
+        margin-left: 1% !important;
     }
 }
 
@@ -276,8 +213,8 @@ html, body{
     }
     .elements{
        justify-content: center;
-        margin-right: 0% !important;
-        margin-left: 5% !important;
+        margin-left: 0% !important;
+        margin-right: 2% !important;
        
     }
 
@@ -285,8 +222,6 @@ html, body{
 
          font-size: 14px !important;
      }
-
-
 
 }
 
@@ -296,19 +231,18 @@ html, body{
     }
 }
 
-/* Sign In CSS */
+/* Sign In */
 
 .modal-body h1{
     font-size: 25px;
     font-weight: 800;
     margin-top: 30px;
-  
+    font-family: 'Poppins', sans-serif;
 }
 
 .modal-body img{
    
     margin-top: 20px;
-   
 }
 
 .modal-body form{
@@ -318,7 +252,6 @@ html, body{
     justify-content: center;
     margin: 40px auto;
 }
-
 
 .modal-body form input{
     background-color: #EBEAE9;
@@ -388,7 +321,7 @@ html, body{
     border: none;
     border-radius: 30px;
     font-size: 18px;
-  
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 20px !important;
@@ -427,7 +360,7 @@ html, body{
 
 }
 
-/* Subscription  */
+/* Subscription : Right Content */
 
 #subscription select {
     border-radius: 15px !important;
@@ -435,11 +368,11 @@ html, body{
     color: #E3B038 !important;
     width: 250px !important;
     font-weight: 500 !important;
-    background: url(../img/Dropdown.png) no-repeat left #ddd;
-    background-position-x: 7%;
-    -webkit-appearance: none;
+    background: url(../img/Dropdown.png) no-repeat right #ddd;
+    background-position-x: 95%;
     background-color: white !important;
-  font-weight: bold;
+    -webkit-appearance: none;
+    font-family: 'Poppins', sans-serif;
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
@@ -451,6 +384,7 @@ html, body{
 
 #subscription .filterSubscription {
     margin-top: 40px;
+  
 }
 
 #subscription .rightContent {
@@ -458,10 +392,10 @@ html, body{
     
 }
 #subscription .filterSubscription p {
-   font-size: 18px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    margin-top: 10px;
-    margin-left: 40px;
+    margin-top: 15px;
+    margin-right: 40px;
     color: black !important;
 }
 
@@ -471,7 +405,7 @@ html, body{
     width: 31% !important;
     border: none !important;
     box-shadow: 0 20px 20px rgba(0,0,0,.05);
-   
+    font-family: 'Poppins', sans-serif;
     border-radius: 28px !important;
  }
  #subscription .card-body{
@@ -484,7 +418,7 @@ html, body{
      color: black !important;
  }
  
- #subscription  .card-text {
+ #subscription .card-text {
      font-size: 50px;
      font-weight: bold;
      color: #E3B038 !important;
@@ -498,7 +432,6 @@ html, body{
   
  }
 
-
  #subscription .card-body p:nth-child(3) {
      margin-top: -18px;
      margin-bottom: 25px;
@@ -509,7 +442,7 @@ html, body{
    font-weight: 600;
    margin-top: 30px;
    color: black !important;
-
+   font-family: 'Poppins', sans-serif;
    
 }
 
@@ -523,7 +456,6 @@ html, body{
     border: none;
     background-color: #E3B038 ;
     color: white;
-    font-weight: bold;
     padding: 10px 25px;
     border-radius: 30px;
     font-size: 15px;
@@ -548,17 +480,16 @@ html, body{
 
 @media(max-width: 445px){
 
-    #subscription  .filterSubscription p {
-        margin-top: 10px;
+    #subscription .filterSubscription p {
+        margin-top: 0px;
     }
 
 }
 
 
-
 @media(max-width: 1100px){
 
-    #subscription  .card-body h5 {
+    #subscription .card-body h5 {
         font-size: 16px;
     }
 
@@ -580,18 +511,18 @@ html, body{
 
 @media(max-width: 1018px){
 
-    #subscription  .card-body button {
+    #subscription .card-body button {
         padding: 10px 20px;
     }
 }
 
 
 @media(max-width: 991px){
-    #subscription  .card-body button {
+    #subscription .card-body button {
         padding: 10px 25px;
     }
 
-    #subscription  .subscriptionCards {
+    #subscription .subscriptionCards {
         margin-top: 10px;
     }
 
@@ -611,34 +542,35 @@ html, body{
 
 @media(max-width:635px){
 
-    #subscription   .card {
+    #subscription .card {
         width: 320px !important;
      }
 }   
 
+
+
 /* Blog */
 
-#blog .content {
+.content {
     margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
     
 }
-#blog .blogHeader p {
-   
-    font-weight: 500;
+.blogHeader p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
     font-size: 30px;
     color: #3B3B3B !important;
 }
 
-#blog .blogCards{
-    flex-direction:  row-reverse;
-}
+
 
 #blog .card {
     margin-top: 30px;
-    width: 23% !important;
+    width: 25% !important;
     border: none !important;
     box-shadow: 0 20px 20px rgba(0,0,0,.05);
-  
+    font-family: 'Poppins', sans-serif;
     height: 550px;
     border-radius: 30px !important;
   
@@ -647,7 +579,7 @@ html, body{
  
 
  #blog .card-img-top{
-   height: 57%;
+   height: 60%;
     border-radius: 30px 30px 0 0;
 }
 
@@ -690,7 +622,7 @@ html, body{
 
 @media(max-width: 1018px){
 
-    #blog   .card-body button {
+    #blog .card-body button {
         padding: 10px 20px;
     }
 }
@@ -701,7 +633,7 @@ html, body{
         padding: 10px 25px;
     }
 
-    #blog  .blogCards {
+    #blog .blogCards {
         margin-top: 8px;
     }
     
@@ -712,28 +644,28 @@ html, body{
 @media(max-width:1500px){
     #blog  .card {
        
-        width: 26% !important;
+        width: 28% !important;
  
       
        
      }
 }
 @media(max-width:1300px){
-    #blog  .card {
+    #blog .card {
        
-        width: 27% !important;
+        width: 29% !important;
  
     
      }
 }
 @media(max-width:1200px){
-    #blog  .card {
-        width: 28% !important;
+    #blog .card {
+        width: 30% !important;
      }
 }
 @media(max-width:1154px){
-    #blog   .card {
-        width: 29% !important;
+    #blog  .card {
+        width: 31% !important;
      }
      #blog  .card-img-top{
         height: 55%;
@@ -752,13 +684,13 @@ html, body{
     #blog  .card {
         width: 43% !important;
      }
-     #blog  .card-body button {
+     #blog .card-body button {
             margin-top: 20px;
         }
 }
 
 @media(max-width:750px){
-    #blog  .card {
+    #blog .card {
         width: 46% !important;
      }
 
@@ -769,14 +701,14 @@ html, body{
 }
 
 @media(max-width:650px){
-    #blog  .card {
+    #blog .card {
         width: 60% !important;
      }
     
 }
 
 @media(max-width:550px){
-    #blog  .card {
+    #blog .card {
         width: 70% !important;
      }
    
@@ -790,7 +722,7 @@ html, body{
    
 }
 @media(max-width:350px){
-    #blog  .card {
+    #blog .card {
         width: 100% !important;
      }
    
@@ -798,29 +730,26 @@ html, body{
 
 /* Branches */
 
-#branch{
+#branch {
     min-height:100% !important;
   
 }
-.branch{
+.branch {
     background: url('../img/bgBranches.jpg') no-repeat center center;
     min-height:100% !important;
-    background-size: cover; 
+    background-size: cover;
+
+  
  
 }
 #branches .branchesHeader p {
     font-size: 40px;
-   
+    font-family: 'Poppins', sans-serif;
     font-weight: 800;
     color: white !important;
     margin-top: 100px;
     text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
  
-
-}
-#branches .branchesCards{
-   
-    flex-direction:  row-reverse;
 
 }
 #branches .lineBg {
@@ -880,7 +809,7 @@ html, body{
 }
 
 @media(max-width:991px){
-    #branches  .card{
+    #branches .card{
         width: 31%;
     }
     #branches .branchesHeader p {
@@ -895,10 +824,10 @@ html, body{
     }
 }
 @media(max-width:750px){
-    #branches  .card{
+    #branches .card{
         width: 45%;
     }
-    #branches  .branchesHeader p {
+    #branches .branchesHeader p {
         font-size: 30px;
       
     }
@@ -910,7 +839,7 @@ html, body{
     }
 }
 @media(max-width:400px){
-    #branches  .card{
+    #branches .card{
         width: 75%;
     }
 }
@@ -920,53 +849,333 @@ html, body{
     }
 }
 
-/* Privet Office  */
+/* Events */
+
+
+#event .eventDate {
+    color: #FC9700;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+#event .rightContent{
+    margin-top: 50px !important;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#event .imgEvents {
+    max-width: 250px !important;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    
+}
+
+#event .txtEvent {
+    padding-top: 30px;
+    
+    
+}
+
+#event .btnBookNow:hover{
+    transform: scale(1.03);
+}
+#event .txtEvent h1{
+    font-size: 21px !important;        
+}
+
+@media(max-width: 1440px){
+    #event .txtEvent h1{
+            font-size: 18px !important;        
+    }
+}
+
+#event .txtEvent h1{
+    font-family: 'Poppins', sans-serif;
+    color: #202124;
+   
+}
+#event  .txtEvent p, .txtEvent a {
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+
+}
+
+#event .txtEvent p {
+    color: rgb(133, 139, 145);
+    font-size: 18px;
+}
+
+#event .txtEvent h1,  .txtEvent a {
+    font-weight: bold;
+}
+
+
+#event .btnBookNow a{
+    background-color: #E3B038;
+    color: white;
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+   
+}
+
+#event .btnBookNow {
+    margin-top: 10px !important;
+}
+
+#event .btnEvent {
+    text-align: right;
+   
+}
+#event .btnBookNow a:hover {
+    color: white;
+    text-decoration: none !important;
+}
+
+#event .filterEvents {
+    margin-top: 10px;
+    
+}
+#event .event:nth-of-type(1){
+    margin-bottom: -30px;
+
+}
+
+#event .event:nth-of-type(3){
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+#event .eventPrice{
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+#event select {
+    border-radius: 15px !important;
+    min-height: 50px;
+   margin-right: 20px !important;
+    width: 250px !important;
+    font-weight: 500 !important;
+    background: url(../img/Dropdown.png) no-repeat right #ddd;
+    background-position-x: 95%;
+    background-color: white !important;
+    -webkit-appearance: none;
+    font-family: 'Poppins', sans-serif;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+#event select option{
+    
+    color: black !important;
+    border-radius: 15px !important;
+}
+
+
+
+@media(max-width: 1580px){
+    #event .imgEvents {
+        max-width: 230px;
+        margin-top: 20px;
+       
+    }
+}
+
+@media(max-width: 1300px){
+
+    #event .imgEvents {
+        max-width: 230px;
+      
+    }
+    #event  .txtEvent p {
+        font-size: 17px;
+    }
+    #event .btnBookNow a{
+        padding: 8px 35px;
+        font-size: 15px !important;
+    }
+}
+
+@media(max-width: 1170px){
+
+    #event .eventsImgs{
+        margin-right: 5% !important;
+    }
+
+    #event .imgEvents {
+        max-width: 230px;
+       
+    }
+
+    #event .event:nth-of-type(3) {
+        margin-top: -20px;
+   
+    }
+
+    #event .blog .carousel-indicators {
+        bottom: -40px !important;
+       
+    }
+
+}
+
+
+@media(max-width: 1060px){
+
+
+    #event  .event:nth-of-type(1){
+        margin-top: 10px;
+    }
+  
+}
+
+@media(max-width: 991px){
+
+    #event .blog .carousel-indicators {
+        bottom: -15px !important;
+        margin-bottom: 20px !important;
+    }
+
+    #event .eventsImgs{
+        text-align: center;
+        margin-top: -80px;
+        margin-right: 0% !important;
+    }
+
+    #event .imgEvents {
+        max-width: 230px;
+        margin-top: 85px;
+    }
+
+    #event .txtEvent {
+        text-align: center;
+        margin-top: -50px;
+    }
+
+    #event .btnEvent {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #event .btnBookNow {
+        margin-bottom: 30px !important;
+    }
+
+    #event  .filterEvents {
+       
+        margin-bottom: 0px;
+       margin-left: 9px;
+        text-align: center !important;
+        justify-content: center !important;
+       
+    }
+    
+    #event .eventPrice{
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media(max-width: 450px){
+
+    #event .imgEvents {
+        max-width: 200px !important;
+    }
+}
+
+#event .blog .carousel-indicators {
+   
+    bottom: -60px;
+    margin-bottom: 20px !important;
+
+}
+
+#event .blog .carousel-indicators li {
+   
+    display: inline-block;
+    width: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 15px;
+    text-indent: -999px;
+    border: 1px solid #E3B038;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#event .blog .carousel-indicators .active {
+    background: #E3B038;
+}
+
+
+#event .carousel-indicators li {
+    
+    display: inline-block;
+    width: 12px;
+    background-color: rgba(0, 0, 0, 0);
+    height: 12px;
+    text-indent: -999px;
+    border: 1px solid #E3B038;
+    border-radius: 10px;
+
+    margin-top: -7%;
+}
+
+#event .carousel-indicators .active {
+    background: #E3B038;
+} 
+
+/* Privet Office */
 
  
-#privateOffice .rightContent{
+#privetOffice .rightContent{
     box-shadow: 0 0 36px rgba(0,0,0,.07);
     margin-top: 50px !important;
     background-color: white;
     border-radius: 10px;
 }
 
-#privateOffice .imgPrivetOffice {
-    max-width: 340px;
+#privetOffice .imgPrivetOffice {
+    max-width: 370px;
     border-radius: 30px;
-    margin-top: 100px !important;
+    margin-top: 80px !important;
 }
 
-#privateOffice .txtPrivetOffice {
+#privetOffice .txtPrivetOffice {
     padding-top: 90px;
     
 }
-#privateOffice .txtPrivetOffice h1{
-    text-align: right ;
+#privetOffice .txtPrivetOffice h1{
+    font-family: 'Poppins', sans-serif;
     color: #202124;
     font-size: 32px;
-    margin-top: 20px !important;
 }
-#privateOffice .txtPrivetOffice p, .txtPrivetOffice a {
-
+#privetOffice .txtPrivetOffice p, .txtPrivetOffice a {
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
 
 }
 
-#privateOffice .txtPrivetOffice p {
-    color: #A6ADB4;
-    font-size: 18px;
-    text-align: right ;
+#privetOffice .txtPrivetOffice p {
+    color: rgb(107, 113, 119);
+    font-size: 19px;
 }
 
-#privateOffice .txtPrivetOffice h1,  .txtPrivetOffice a {
+#privetOffice .txtPrivetOffice h1,  .txtPrivetOffice a {
     font-weight: bold;
 }
 
 
-#privateOffice .btnRent a{
+#privetOffice .btnRent a{
     background-color: #E3B038;
     color: white;
-   
     padding: 10px 45px;
     cursor: pointer;
     border-radius: 20px;
@@ -976,154 +1185,113 @@ html, body{
     box-shadow: 0px 20px 31px -13px rgba(255,200,61,0.44);
 }
 
-
-#privateOffice .btnRent {
+#privetOffice .btnRent {
     margin-top: 7px !important;
-    text-align: left ;
 }
 
-#privateOffice .btnPrivetOffice {
+#privetOffice .btnPrivetOffice {
     text-align: right;
    
 }
-
-#privateOffice .btnRent a:hover {
+#privetOffice .btnRent a:hover {
     color: white;
     text-decoration: none !important;
 }
-#privateOffice .privet:nth-of-type(2) {
+#privetOffice .privet:nth-of-type(2) {
     margin-bottom: 30px !important;
     margin-top: 11px;
 }
 
 
-input::-webkit-inner-spin-button,
-input::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-}
 
-
-#privateOffice .date {
+#privetOffice .date {
     margin-top: 20px;
     margin-bottom: -20px;
 }
 
-#privateOffice .dateTxt {
-    margin-left: 10px;
+#privetOffice .dateTxt {
+    margin-right: 10px;
     padding-top: 5px;
     font-weight: 500;
 }
 
 @media(max-width: 1580px){
-    #privateOffice .imgPrivetOffice {
-        max-width: 300px;
-        margin-top: 100px !important;
-    }
-    #privateOffice  .blog .carousel-indicators {
-   
-        margin-bottom: -100px !important;
-    
+    #privetOffice .imgPrivetOffice {
+        max-width: 320px;
+        margin-top: 90px !important;
     }
 }
 
-@media(max-width: 1424px){
+@media(max-width: 1300px){
 
-    #privateOffice .imgPrivetOffice {
-        max-width: 270px;
-        margin-top: 110px !important;
+    #privetOffice .imgPrivetOffice {
+        max-width: 290px;
+        margin-top: 90px !important;
     }
-    #privateOffice .txtPrivetOffice p {
+    #privetOffice .txtPrivetOffice p {
         font-size: 17px;
     }
-    #privateOffice .txtPrivetOffice h1{
-        margin-top: 20px !important;
-    }
-    #privateOffice .btnRent a{
+    #privetOffice .btnRent a{
         padding: 8px 35px;
         font-size: 19px;
     }
 }
 
-@media(max-width: 1220px){
+@media(max-width: 1170px){
 
-   
-
-    #privateOffice  .imgPrivetOffice {
-        max-width: 230px;
-        margin-top: 110px !important;
-
+    #privetOffice .imgOffice{
+        margin-right: 5% !important;
     }
 
+    #privetOffice .imgPrivetOffice {
+        max-width: 250px;
+        margin-top: 110px !important;
+    }
 
-    #privateOffice  .privet:nth-of-type(2) {
+    #privetOffice .privet:nth-of-type(2) {
         margin-top: -20px;
     margin-bottom: 10px !important;
     }
 
 }
 
-@media(max-width: 1200px){
-
-    #privateOffice .txtPrivetOffice h1{
-        margin-top: 0px !important;
-    }
-}
 
 @media(max-width: 1060px){
 
-    #privateOffice .blog .carousel-indicators {
-   
-        bottom: -55px;
-        margin-bottom: 0px !important;
-    
+    #privetOffice .blog .carousel-indicators {
+        bottom: -15px !important;
     }
 }
 
 @media(max-width: 991px){
 
-    #privateOffice .imgOffice{
+    #privetOffice .imgOffice{
         text-align: center;
         margin-top: -80px;
         margin-right: 0% !important;
     }
 
-    #privateOffice .elements{
-        flex-direction: row-reverse;
+    #privetOffice .imgPrivetOffice {
+        max-width: 350px;
     }
 
-    #privateOffice  .imgPrivetOffice {
-        max-width: 300px;
-        
-    }
-
-    #privateOffice .txtPrivetOffice {
+    #privetOffice .txtPrivetOffice {
         text-align: center;
         margin-top: -50px;
     }
 
-    #privateOffice .btnPrivetOffice {
+    #privetOffice .btnPrivetOffice {
         text-align: center;
         margin-bottom: 30px;
     }
 
-    #privateOffice .btnRent {
+    #privetOffice .btnRent {
         margin-bottom: 30px !important;
     }
 
-    #privateOffice .date {
-        margin-left: 35px;
+    #privetOffice .date {
+        
         margin-bottom: 0px;
-    }
-  
-  
-    #privateOffice .txtPrivetOffice h1, #privateOffice .txtPrivetOffice p, #privateOffice  .btnRent{
-        text-align: center !important;
-    }
-    #privateOffice .blog .carousel-indicators {
-
-        bottom: -28px !important;
-        margin-bottom: 20px !important;
     }
 
 }
@@ -1131,29 +1299,27 @@ input::-webkit-calendar-picker-indicator {
 
 @media(max-width: 450px){
 
-    #privateOffice  .imgPrivetOffice {
+    #privetOffice .imgPrivetOffice {
         max-width: 250px;
-    }
-    #privateOffice  .date {
-        margin-left: 10px !important;
-       
     }
 }
 
 @media(max-width: 767px){
-    #privateOffice .input-group{
+    #privetOffice .input-group{
         width: 40% !important;
         margin-bottom: 15px;
         margin-left: 28%;
     
     }
-   
-
+    #privetOffice .toDate {
+        padding-left: 20px !important;
+        
+    }
    
 }
 
 @media(max-width: 680px){
-    #privateOffice  .input-group{
+    #privetOffice .input-group{
         width: 60% !important;
         margin-left: 17%;
     
@@ -1161,22 +1327,22 @@ input::-webkit-calendar-picker-indicator {
 }
 
 @media(max-width: 521px){
-    #privateOffice  .input-group{
+    #privetOffice .input-group{
         width: 80% !important;
         margin-left: 8%;
     
     }
 }
 
-#privateOffice .blog .carousel-indicators {
+#privetOffice .blog .carousel-indicators {
    
     bottom: -55px;
-    margin-bottom: 40px !important;
+    margin-bottom: 30px !important;
 
 }
 
 
-#privateOffice .blog .carousel-indicators li {
+#privetOffice .blog .carousel-indicators li {
     margin-top: -2%;
     display: inline-block;
     width: 15px;
@@ -1187,15 +1353,13 @@ input::-webkit-calendar-picker-indicator {
     border-radius: 10px;
 }
 
-#privateOffice .blog .carousel-indicators .active {
+#privetOffice .blog .carousel-indicators .active {
     background: #E3B038;
 }
 
-#privateOffice .privet, #privateOffice .priverContainer, #privateOffice .date {
-    flex-direction: row-reverse !important;
-}
 
-#privateOffice .carousel-indicators li {
+
+#privetOffice .carousel-indicators li {
     margin-top: -2%;
     display: inline-block;
     width: 12px;
@@ -1208,7 +1372,7 @@ input::-webkit-calendar-picker-indicator {
     margin-top: -7%;
 }
 
-#privateOffice .carousel-indicators .active {
+#privetOffice .carousel-indicators .active {
     background: #E3B038;
 }   
 
@@ -1216,18 +1380,14 @@ input::-webkit-calendar-picker-indicator {
 
 
 #profile .userInformations{
-    
+    font-family: 'Poppins', sans-serif;
     margin-top: 50px !important;
-    margin-right: 7%;
+    margin-left: 7%;
     background-color: white;
     padding: 10px 40px;
     box-shadow: 0 20px 20px rgba(0,0,0,.03);
     width: 100%;
     border-radius: 10px;
-}
-#profile .dateExpires {
-    text-align: right;
-    margin-right: 2px;
 }
 
 #profile .userImg {
@@ -1239,7 +1399,6 @@ input::-webkit-calendar-picker-indicator {
 #profile .moreInfo{
     text-decoration: underline;
     color: #707070;
-    font-weight: 500;
 }
 #profile .moreInfo:hover{
     color: #707070;
@@ -1248,8 +1407,8 @@ input::-webkit-calendar-picker-indicator {
 #profile .Username {
     font-size: 19px;
     padding-top: 10px;
-    font-weight: 500;
-   
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
     color: black !important;
 }
 
@@ -1267,8 +1426,6 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 50px;
    
 }
-
-
 #profile .subInformation{
     border-radius: 10px !important;
     background-color: white;
@@ -1282,7 +1439,6 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 30px;
     border-radius: 10px !important;
     background-color: white;
- 
     padding: 5px 30px;
     width: 100%;
     margin-left: 0px;
@@ -1301,7 +1457,7 @@ input::-webkit-calendar-picker-indicator {
 
 }
 
-#profile .page-link {
+#profile.page-link {
     box-shadow: none !important;
 }
 
@@ -1318,17 +1474,13 @@ input::-webkit-calendar-picker-indicator {
     text-align: right !important;
 }
 #profile td{
-   
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
 }
-#profile .reservInformation .header {
-    margin-left:auto ; margin-right:12px !important; 
-}
-
 #profile .detailsBtn{
     background: none;
     outline: none !important;
-   
+    font-family: 'Poppins', sans-serif;
     border: none;
     text-decoration: none;
    font-weight: 500;
@@ -1341,14 +1493,18 @@ input::-webkit-calendar-picker-indicator {
 }
 
 #profile .header {
-    font-weight: bold;
+    font-weight: 500;
     color: #707070;
+    font-family: 'Poppins', sans-serif;
     margin: 20px 0px;
     font-size: 17px;
 }
 
-
-
+#profile .reservInformation .header {
+   
+    margin: 20px 5px;
+ 
+}
 
 #profile .reservPagination {
     text-align: right !important;
@@ -1376,13 +1532,9 @@ input::-webkit-calendar-picker-indicator {
     padding-top: 20px;
 }
 
-#profile .profileContainer,#profile .sub, #profile  .event {
-    flex-direction: row-reverse;
-}
-
 #profile .sub p:nth-child(2) {
   
-    font-weight: 500;
+    font-weight: 700;
    color: #707070;
 }
 
@@ -1395,7 +1547,7 @@ input::-webkit-calendar-picker-indicator {
 
 #profile .event p:nth-child(2) {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     color: #E3B038;
 }
 
@@ -1403,20 +1555,14 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 60px;
 }
 
-#profile tr td {
-    text-align: center;
-}
-#profile th {
-    text-align: center;
-}
 @media(max-width:1120px){
 
-    #profile  .Username {
+    #profile .Username {
         font-size: 18px !important;
        
     }
 
-    #profile  .userInformations p {
+    #profile .userInformations p {
         font-size: 14px;
     }
 
@@ -1430,40 +1576,32 @@ input::-webkit-calendar-picker-indicator {
 
 }
 
-@media(max-width:361px){
-
-    #profile .dateExpires {
-       text-align: center !important;
-   }
-
-}
-
 @media(max-width:991px){
 
-    #profile  .userInformations p {
+    #profile .userInformations p {
         font-size: 16px;
     }
 
-    #profile  .userInformations {  
+    #profile .userInformations {  
         justify-content: center !important;
         margin: 30px auto !important;
         width: 80% !important;
         
     }
 
-    #profile .rightContent {
+    #profile  .rightContent {
         margin-top: 10px;
        
     }
 
-    #profile  .elements{
+    #profile .elements{
         margin-top: 30px;
     }
-    #profile  .sub{
+    #profile .sub{
         text-align: center !important;
         justify-content: center !important;
     }
-    #profile  .event{
+    #profile .event{
         text-align: center !important;
         justify-content: center !important;
     }
@@ -1473,51 +1611,51 @@ input::-webkit-calendar-picker-indicator {
         height: auto;
     }
 
+
 }
 
-@media(max-width:592px){
+@media(max-width:650px){
 
-    #profile  .eventImg{
+    #profile .eventImg{
         margin-right: 35px;
     }
 
-    #profile  .event p {
+    #profile .event p {
         margin-right: 30px;
     }
 }
 
-@media(max-width:609px){
-    #profile  .header {
+@media(max-width:650px){
+    #profile .header {
         margin: 25px 0;
        text-align: center !important;
        justify-content: center !important;
     }
-    #profile  .reservInformation .header{
+    #profile .reservInformation .header{
         width: 80% !important;
-        margin: 30px auto !important;
+        margin: 30px auto;
         text-align: center !important;
        justify-content: center !important;
     }
 
+
+
 }
 
-
-
-@media(max-width:591px){
-    #profile  .eventImg{
-        margin-right: 3px;
+@media(max-width:429px){
+    #profile .eventImg{
+        margin-right: 0px;
     }
     #profile  .event p {
-        margin-right: 3px;
+        margin-right: 0px;
     }
 }
 
-/* Reservation  */
+/* Reservation */
 
 
 #reservation .reservationHeader {
     margin-top: 40px;
-
 }
 
 #reservation .rightContent {
@@ -1526,7 +1664,7 @@ input::-webkit-calendar-picker-indicator {
 }
 #reservation .reservationHeader p {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700 !important;
+    font-weight: 500;
     margin-top: 15px;
     font-size: 25px;
     margin-right: 40px;
@@ -1540,13 +1678,9 @@ input::-webkit-calendar-picker-indicator {
 
  }
 
- #reservation  .cardReservation-title {
-     font-size: 20px !important;
- }
-
  #reservation .card {
     margin-top: 30px;
-    width: 350px !important;
+    width: 400px !important;
     border: none !important;
     box-shadow: 0 20px 20px rgba(0,0,0,.05);
     font-family: 'Poppins', sans-serif;
@@ -1558,7 +1692,7 @@ input::-webkit-calendar-picker-indicator {
  
 
  #reservation .card-img-top{
-   height: 55%;
+   height: 62%;
     border-radius: 30px 30px 0 0;
 }
 
@@ -1578,10 +1712,9 @@ input::-webkit-calendar-picker-indicator {
     border: none;
     background-color: #222831 !important;
     color: white;
-    font-weight: bold;
     padding: 8px 40px;
     border-radius: 30px;
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 5px;
 
 }
@@ -1591,9 +1724,6 @@ input::-webkit-calendar-picker-indicator {
 }
 #reservation .reservationCards {
     margin-top: 50px;
-}
-#reservation .reservationContainer, #reservation .reservationCards {
-    flex-direction: row-reverse !important;
 }
 
 @media(max-width: 510px){
@@ -1615,18 +1745,18 @@ input::-webkit-calendar-picker-indicator {
 
 @media(max-width: 1018px){
 
-    #reservation  .card-body button {
+    #reservation .card-body button {
         padding: 10px 20px;
     }
 }
 
 
 @media(max-width: 991px){
-    #reservation  .card-body button {
+    #reservation .card-body button {
         padding: 10px 25px;
     }
 
-    #reservation  .reservationCards {
+    #reservation .reservationCards {
         margin-top: 10px;
     }
 
@@ -1639,7 +1769,7 @@ input::-webkit-calendar-picker-indicator {
 
     
     #reservation .card {
-    width: 280px !important;
+    width: 300px !important;
  }
 
 }
@@ -1647,7 +1777,7 @@ input::-webkit-calendar-picker-indicator {
 
 @media(max-width:635px){
 
-    #reservation  .card {
+    #reservation .card {
         width: 320px !important;
      }
 }   
@@ -1655,13 +1785,13 @@ input::-webkit-calendar-picker-indicator {
 
 @media(max-width:1800px){
     #reservation .card {
-        width: 280px !important;
+        width: 330px !important;
      }
 }
 
 @media(max-width:1400px){
-    #reservation .card {  
-        width: 280px !important;
+    #reservation  .card {  
+        width: 310px !important;
      }
 }
 
@@ -1672,7 +1802,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 @media(max-width:1215px){
-    #reservation .card {
+    #reservation  .card {
         width: 250px !important;
      }
 }
@@ -1683,14 +1813,11 @@ input::-webkit-calendar-picker-indicator {
      }
 }
 @media(max-width: 991px){
-    #reservation  .card{
+    #reservation .card{
       width: 300px !important;
   }
-
-  #reservation .elements {
-      flex-direction: row-reverse !important;
-  }
 }
+
 
 /* Reservation Details */
 
@@ -1704,7 +1831,7 @@ input::-webkit-calendar-picker-indicator {
     
 }
 #reservationDetails .reservationHeader p {
-   
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     margin-top: 15px;
     font-size: 25px;
@@ -1720,14 +1847,15 @@ input::-webkit-calendar-picker-indicator {
 
  }
  
- #reservationDetails  select {
+ #reservationDetails select {
     border-radius: 15px !important;
     min-height: 40px;
     color: black !important;
-    background: url(../img/Dropdown.png) no-repeat left #ddd;
-    background-position-x: 7%;
+    background: url(../img/Dropdown.png) no-repeat right #ddd;
+    background-position-x: 95%;
     -webkit-appearance: none;
-   background-color: white !important;
+    font-family: 'Poppins', sans-serif;
+    background-color: white !important;
     -moz-appearance: none;
     text-indent: 1px;
     font-size: 16px !important;
@@ -1739,23 +1867,23 @@ input::-webkit-calendar-picker-indicator {
 }
 
 #reservationDetails .fullDay {
-     margin-right: 67px;
+     margin-left: 67px;
      margin-top: 25px;
  }
 
 
 
  #reservationDetails .custom-switch {
-    
+    padding-left: 2.25rem;
     padding-bottom: 1rem; 
-    margin-top: 31px;
-    margin-right: -30px;
+    margin-top: 26px;
+    margin-left: 30px;
     margin-bottom: 10px;
   
   }
 
 
-  #reservationDetails  .custom-control-label { 
+  #reservationDetails .custom-control-label { 
     padding-top: 0.5rem;
     padding-left: 2rem;
     padding-bottom: 0.1rem;
@@ -1774,18 +1902,15 @@ input::-webkit-calendar-picker-indicator {
   
   }
 
-  #reservationDetails  .custom-control-input:focus ~ .custom-control-label::before {
+  #reservationDetails .custom-control-input:focus ~ .custom-control-label::before {
     box-shadow:none !important;
 }
   
 #reservationDetails .promoCode{
-  
+    margin-left: -16% !important;
     margin-bottom: 25px;
 }
 
-#reservationDetails .numberOfHoursLg {
-    margin-top: 3px;
-}
 #reservationDetails .notes {
     margin-bottom: 50px;
 }
@@ -1795,7 +1920,7 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 6px;
 }
 
-#reservationDetails .custom-switch .custom-control-label::after {
+#reservationDetails  .custom-switch .custom-control-label::after {
     top: calc(-0.3rem + 2px);
      
     left: calc(-3.25rem + 2px);
@@ -1815,18 +1940,18 @@ input::-webkit-calendar-picker-indicator {
     }
   }
 
-  #reservationDetails .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+  #reservationDetails   .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
     background-color: rgb(218, 160, 26);
    
     }
   
-    #reservationDetails .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    #reservationDetails   .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
     background-color: #E3B038;
     -webkit-transform: translateX(2rem); 
     transform: translateX(2rem); 
   }
 
-  #reservationDetails .card-body input[type=date], #reservationDetails  .card-body input[type=time], #reservationDetails  .card-body input[type=text]{
+  #reservationDetails  .card-body input[type=date], .card-body input[type=time], .card-body input[type=text]{
      border-radius: 30px;
      border: 1px solid rgb(216, 216, 216);
      padding: 7px 15px;
@@ -1836,9 +1961,7 @@ input::-webkit-calendar-picker-indicator {
 
  #reservationDetails .card-body span{
     margin-right: 5px;
-    font-weight: 500;
     font-size: 18px;
-   
     color: #222831;
     text-align: center !important;
     justify-content: center !important;
@@ -1852,17 +1975,17 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 6px;
 }
 
-
 #reservationDetails .numberOfHoursSm{
     display: none;
-  
+}
+#reservationDetails .numberOfHoursLg {
+    margin-top: 4px;
 }
 
 #reservationDetails .duration {
     margin-top: 15px;
 }
 #reservationDetails .durationImg {
-    margin-top: -2px;
     margin-right: 2.5%;
 }
 
@@ -1880,7 +2003,7 @@ input::-webkit-calendar-picker-indicator {
     background: #E3B038;
   }
 
-  #reservationDetails  .custom-range::-webkit-slider-thumb {
+  #reservationDetails .custom-range::-webkit-slider-thumb {
     background: #E3B038;
     
   }
@@ -1898,7 +2021,7 @@ input::-webkit-calendar-picker-indicator {
     width: 28% !important;
     border: none !important;
     box-shadow: 0 20px 20px rgba(0,0,0,.05);
- 
+    font-family: 'Poppins', sans-serif;
     height: 550px;
     border-radius: 30px !important;
   
@@ -1910,7 +2033,7 @@ input::-webkit-calendar-picker-indicator {
     width: 62% !important;
     border: none !important;
     box-shadow: 0 20px 20px rgba(0,0,0,.05);
-  
+    font-family: 'Poppins', sans-serif;
 
     border-radius: 30px !important;
  }
@@ -1919,7 +2042,7 @@ input::-webkit-calendar-picker-indicator {
  
 
  #reservationDetails .card-img-top{
-   height: 58%;
+   height: 62%;
     border-radius: 30px 30px 0 0;
 }
 
@@ -1947,7 +2070,6 @@ input::-webkit-calendar-picker-indicator {
     outline: none;
     text-decoration: none;
     border: none !important;
-    font-weight: 500;
     background-color: #E3B038 !important;
     color: white;
     padding: 8px 30px;
@@ -1956,13 +2078,7 @@ input::-webkit-calendar-picker-indicator {
     margin-top: -40px;
 
 }
-#reservationDetails .fullDay {
-    margin-right: 88px;
-}
 
-#reservationDetails .fullDay span{
-    margin-top: -10px !important;
-}
 #reservationDetails .reserveBtn:hover {
     transform: scale(1.05);
 }
@@ -1971,13 +2087,15 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 10px;
 }
 
-#reservationDetails .resDetailsContainer{
-    flex-direction: row-reverse !important;
+input::-webkit-inner-spin-button,
+input::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
 }
 
 @media(max-width: 510px){
 
-    #reservationDetails .reservationHeader p {
+    #reservationDetails  .reservationHeader p {
         margin-right: 10px;
     }
 
@@ -1991,13 +2109,17 @@ input::-webkit-calendar-picker-indicator {
 
 }
 
-
+@media(max-width:575px){
+    #reservationDetails .promoCode{
+        margin: 0px !important;
+    }
+}
 
 
 @media(max-width: 991px){
     
 
-    #reservationDetails .reservationCards {
+    #reservationDetails  .reservationCards {
         margin-top: 10px;
     }
 
@@ -2005,7 +2127,7 @@ input::-webkit-calendar-picker-indicator {
         margin-top: 10px;
     }
     
-    #reservationDetails   .reservationHeader p {
+    #reservationDetails  .reservationHeader p {
     
         margin-right: 0px;
        
@@ -2019,13 +2141,13 @@ input::-webkit-calendar-picker-indicator {
         width: 30% !important;
     }
 
-    #reservationDetails   .card:nth-of-type(2){
+    #reservationDetails  .card:nth-of-type(2){
        
         width: 65% !important;
       
      }
 
-     #reservationDetails   .card-img-top{
+     #reservationDetails  .card-img-top{
         height: 58%;
         
      }
@@ -2034,30 +2156,24 @@ input::-webkit-calendar-picker-indicator {
 }
 
 @media(max-width: 1412px){
-    #reservationDetails .card-body span{
+    #reservationDetails   .card-body span{
        
         font-size: 15px;
        
     }
 }
 
-
-
 @media(max-width: 1160px){
-    #reservationDetails  .card:nth-of-type(1){
+    #reservationDetails    .card:nth-of-type(1){
         width: 31% !important;
     }
 }
 @media(max-width: 1220px){
     #reservationDetails  .fullDayCenter {
-        width: 80% !important;
-        margin: 0 0 !important;
-        text-align: center !important;
-        justify-content: center !important;
-    }
-
-    #reservationDetails  .custom-control{
-        margin-top: 28px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
     }
 
     #reservationDetails  .fullDay {
@@ -2075,7 +2191,7 @@ input::-webkit-calendar-picker-indicator {
         margin-top: 30px !important;
     }
 
-    #reservationDetails  .card:nth-of-type(2){
+    #reservationDetails   .card:nth-of-type(2){
        
         width: 95% !important;
       
@@ -2087,7 +2203,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 @media(max-width: 720px){
-    #reservationDetails .card:nth-of-type(1){
+    #reservationDetails  .card:nth-of-type(1){
         width: 60% !important;
     }
  
@@ -2125,18 +2241,12 @@ input::-webkit-calendar-picker-indicator {
     }
 
 }
-@media(max-width: 492px){
+@media(max-width: 469px){
     #reservationDetails .numberOfHoursLg{
        display: none;
     }
-    #reservationDetails  .numberOfHoursSm{
+    #reservationDetails .numberOfHoursSm{
         display: unset;
-    
-     }
-  
-     #reservationDetails  .numberHours {
-         margin-top: 10px;
-         margin-bottom: 5px;
      }
      #reservationDetails  .range{
          width: 80%;
@@ -2146,7 +2256,7 @@ input::-webkit-calendar-picker-indicator {
 
 @media(max-width: 382px){
   
-    #reservationDetails  .custom-switch {
+    #reservationDetails .custom-switch {
        text-align: center;
         margin-top: 26px;
         margin-left: 5px;
@@ -2160,50 +2270,29 @@ input::-webkit-calendar-picker-indicator {
      }
 }
 
+@media(max-width: 333px){
+    #reservationDetails  .custom-switch{
+           width: 80%;
+           margin: 10px;
+           margin-left: 40%;
+   }
 
+
+
+}
 
 @media(max-width:1220px){
+    #reservationDetails   .promoCode{
+        margin-left: 0% !important;
+       
+       
+    }
 
-    
     #reservationDetails  .card:nth-of-type(1) {
         margin-top: 80px;
      }
 }
 
-
-@media(min-width:1220px){
-    #reservationDetails  .promoCode{
-        margin-left: 7% !important;
-    }
-}
-
-
-@media(max-width:888px){
-    #reservationDetails .promoCode{
-        margin-left: 7% !important;
-    }
-}
-
-@media(max-width:574px) {
-    #reservationDetails .promoCode{
-        margin: 0 !important;
-    }
-}
-
-@media(max-width: 415px){
-    #reservationDetails .fullDayCenter{
-        width: 90%;
-        margin: 20px auto;
-        justify-content: center !important;
-        text-align: center !important;
-}
-#reservationDetails .fullDay{
-  margin-left: 0 !important;
-  margin-right: 20% !important;
-    justify-content: center !important;
-        text-align: center !important;
-    }
-}
 
 /* Subscription Confirm  */
 
@@ -2213,11 +2302,11 @@ input::-webkit-calendar-picker-indicator {
     color: #E3B038 !important;
     width: 250px !important;
     font-weight: 500 !important;
-    background: url(../img/Dropdown.png) no-repeat left #ddd;
-    background-position-x: 7%;
+    background: url(../img/Dropdown.png) no-repeat right #ddd;
+    background-position-x: 95%;
     -webkit-appearance: none;
     background-color: white !important;
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
@@ -2231,20 +2320,15 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 40px;
 }
 
-#subscriptionConfirm .subConfirmContainer, .filterSubscription, .btnSubConfirm{
-    flex-direction: row-reverse !important;
-}
-
-
 #subscriptionConfirm .rightContent {
     margin-top: 60px;
     
 }
 #subscriptionConfirm .filterSubscription p {
-    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    margin-top: 10px;
-    margin-left: 40px;
+    margin-top: 15px;
+    margin-right: 40px;
     color: black !important;
 }
 
@@ -2252,10 +2336,9 @@ input::-webkit-calendar-picker-indicator {
 #subscriptionConfirm .card:nth-of-type(1) {
     margin-top: 30px;
     width: 31% !important;
-    font-size: 18px;
     border: none !important;
     box-shadow: 0 20px 20px rgba(0,0,0,.05);
-
+    font-family: 'Poppins', sans-serif;
     border-radius: 28px !important;
     padding-top: 30px !important;
  }
@@ -2265,7 +2348,7 @@ input::-webkit-calendar-picker-indicator {
     width: 62% !important;
     border: none !important;
     box-shadow: 0 20px 20px rgba(0,0,0,.05);
-
+    font-family: 'Poppins', sans-serif;
     border-radius: 28px !important;
 
  }
@@ -2277,36 +2360,32 @@ input::-webkit-calendar-picker-indicator {
     margin: 50px auto;
  }
 
- #subscriptionConfirm .subscriptionConfirm ul {
+ #subscriptionConfirm  .subscriptionConfirm ul {
      color: #707070;
-     text-align: right;
+     text-align: left;
      font-size: 17px;
-     width: 60%;
+     font-family: 'Poppins', sans-serif;
+     width: 75%;
      margin-top: 20px;
      margin-bottom: -20px;
     
   
  }
 
- #subscriptionConfirm .card-title{
-    font-size: 20px !important;
- }
-
  #subscriptionConfirm .subscriptionConfirm .card-title{
      font-weight: bold;
-     font-size: 18px;
-   
+     font-family: 'Poppins', sans-serif;
  }
 
  #subscriptionConfirm .subscriptionConfirm ul li {
      margin-bottom: 20px;
  }
 
- #subscriptionConfirm .subscriptionConfirm ul {
+ #subscriptionConfirm  .subscriptionConfirm ul {
     list-style: none; 
   }
   
-  #subscriptionConfirm .subscriptionConfirm ul li::before {
+  #subscriptionConfirm  .subscriptionConfirm ul li::before {
     content: "\2022"; 
     color: #E3B038; 
     font-weight: bold; 
@@ -2328,19 +2407,19 @@ input::-webkit-calendar-picker-indicator {
      
  }
 
- #subscriptionConfirm .card:nth-of-type(1) .card-body{
+ #subscriptionConfirm  .card:nth-of-type(1) .card-body{
      background: url('../img/line.png') no-repeat center top ;
      background-position: 50% 12%;
      background-size: 110px;
  }
 
 
- #subscriptionConfirm .card-body h5 {
+ #subscriptionConfirm  .card-body h5 {
      font-size: 18px;
      color: black !important;
  }
  
- #subscriptionConfirm .card-text {
+ #subscriptionConfirm  .card-text {
      font-size: 50px;
      font-weight: bold;
      color: #E3B038 !important;
@@ -2348,27 +2427,27 @@ input::-webkit-calendar-picker-indicator {
      margin-right: 7%;
      
  }
- #subscriptionConfirm .card-text sup{
+ #subscriptionConfirm  .card-text sup{
     color: black !important;
      font-size: 32px !important;
   
  }
 
- #subscriptionConfirm .card-body p:nth-child(3) {
+ #subscriptionConfirm  .card-body p:nth-child(3) {
      margin-top: -18px;
      margin-bottom: 25px;
      color: black !important;
  }
 
- #subscriptionConfirm .card-body p:nth-child(6) {
+ #subscriptionConfirm  .card-body p:nth-child(6) {
    font-weight: 600;
    margin-top: 30px;
    color: black !important;
-  
+   font-family: 'Poppins', sans-serif;
    
 }
 
-#subscriptionConfirm .card-body img {
+#subscriptionConfirm  .card-body img {
     margin-bottom: 20px;
 }
 
@@ -2388,7 +2467,6 @@ input::-webkit-calendar-picker-indicator {
 #subscriptionConfirm .card-body button {
     outline: none;
     text-decoration: none;
-    font-weight: bold;
     border: none;
     background-color: #E3B038 ;
     color: white;
@@ -2420,11 +2498,18 @@ input::-webkit-calendar-picker-indicator {
 @media(max-width: 445px){
 
     #subscriptionConfirm  .filterSubscription p {
-        margin-top: 10px;
+        margin-top: 0px;
     }
 
 }
 
+@media(max-width: 434px){
+
+    #subscriptionConfirm  .filterSubscription p {
+        margin-top: 0px;
+    }
+
+}
 
 
 @media(max-width: 1100px){
@@ -2444,7 +2529,6 @@ input::-webkit-calendar-picker-indicator {
     #subscriptionConfirm  .card-body button {
       
         font-size: 14px;
-
  
     }
 
@@ -2464,26 +2548,22 @@ input::-webkit-calendar-picker-indicator {
 
 
 @media(max-width: 991px){
-    #subscriptionConfirm .card-body button {
+    #subscriptionConfirm   .card-body button {
         padding: 10px 25px;
-    }
-    #subscriptionConfirm   .elements{
-        flex-direction: row-reverse !important;
     }
 
     #subscriptionConfirm  .subscriptionCards {
         margin-top: 10px;
     }
 
-    #subscriptionConfirm .filterSubscription {
+    #subscriptionConfirm   .filterSubscription {
         margin-top: 10px;
     }
  
-    #subscriptionConfirm .subscriptionConfirm ul {
-        width: 90% !important;
+    #subscriptionConfirm  .subscriptionConfirm ul {
+        width: 100% !important;
        
     }
-  
 }
 @media(max-width: 848px){
 
@@ -2502,7 +2582,7 @@ input::-webkit-calendar-picker-indicator {
  }
 
  #subscriptionConfirm .subscriptionConfirm ul {
-    width: 70% !important;
+    width: 80% !important;
    
 }
 
@@ -2520,27 +2600,27 @@ input::-webkit-calendar-picker-indicator {
 
 @media(max-width:1238px){
    
-    #subscriptionConfirm  .backbtn {
+    #subscriptionConfirm   .backbtn {
      
         padding: 10px 30px !important;
     }
     
-    #subscriptionConfirm  .confirmbtn {
+    #subscriptionConfirm   .confirmbtn {
         padding: 10px 22px !important;
     }
 }
 
 @media(max-width:1540px){
     #subscriptionConfirm  .subscriptionConfirm ul {
-        width: 70%;
+        width: 90%;
     }
 }
 @media(max-width:1300px){
-    #subscriptionConfirm .subscriptionConfirm ul {
-        width: 80%;
+    #subscriptionConfirm  .subscriptionConfirm ul {
+        width: 100%;
        
     }
-    #subscriptionConfirm .informationSubConfirm {
+    #subscriptionConfirm  .informationSubConfirm {
  
         list-style-position: unset;
     }
@@ -2548,7 +2628,7 @@ input::-webkit-calendar-picker-indicator {
 }
 @media(max-width:1238px){
   
-    #subscriptionConfirm .informationSubConfirm {
+    #subscriptionConfirm  .informationSubConfirm {
  
         list-style-position: unset;
     }
@@ -2557,7 +2637,7 @@ input::-webkit-calendar-picker-indicator {
 
 @media(max-width:580px){
     #subscriptionConfirm  .subscriptionConfirm ul {
-        width: 90% !important;
+        width: 100% !important;
        
     }
 }
@@ -2573,7 +2653,8 @@ input::-webkit-calendar-picker-indicator {
     }
 }
 
-/* Subscription Details  */
+
+/* Subscription Details */
 
 #subscriptionDetails select {
     border-radius: 15px !important;
@@ -2581,11 +2662,11 @@ input::-webkit-calendar-picker-indicator {
     color: #E3B038 !important;
     width: 250px !important;
     font-weight: 500 !important;
-    background: url(../img/Dropdown.png) no-repeat left #ddd;
-    background-position-x: 7%;
+    background: url(../img/Dropdown.png) no-repeat right #ddd;
+    background-position-x: 95%;
     -webkit-appearance: none;
     background-color: white !important;
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
@@ -2594,11 +2675,6 @@ input::-webkit-calendar-picker-indicator {
     color:black !important;
     border-radius: 15px !important;
 }
-
-#subscriptionDetails .filterSubscription,#subscriptionDetails  .subDetailsContainer,#subscriptionDetails  .btnSubDetails {
-    flex-direction: row-reverse !important;
-}
-
 
 #subscriptionDetails .filterSubscription {
     margin-top: 40px;
@@ -2609,10 +2685,10 @@ input::-webkit-calendar-picker-indicator {
     
 }
 #subscriptionDetails .filterSubscription p {
-    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    margin-top: 10px;
-    margin-left: 40px;
+    margin-top: 15px;
+    margin-right: 40px;
     color: black !important;
 }
 
@@ -2622,7 +2698,7 @@ input::-webkit-calendar-picker-indicator {
     width: 31% !important;
     border: none !important;
     box-shadow: 0 20px 20px rgba(0,0,0,.05);
-   
+    font-family: 'Poppins', sans-serif;
     border-radius: 28px !important;
  }
 
@@ -2631,7 +2707,7 @@ input::-webkit-calendar-picker-indicator {
     width: 62% !important;
     border: none !important;
     box-shadow: 0 20px 20px rgba(0,0,0,.05);
-   
+    font-family: 'Poppins', sans-serif;
     border-radius: 28px !important;
  }
 
@@ -2653,7 +2729,7 @@ input::-webkit-calendar-picker-indicator {
     background: #E3B038;
   }
 
-  #subscriptionDetails .custom-range::-webkit-slider-thumb {
+  #subscriptionDetails  .custom-range::-webkit-slider-thumb {
     background: #E3B038;
     
   }
@@ -2662,7 +2738,7 @@ input::-webkit-calendar-picker-indicator {
     background: #E3B038;
   }
   
-  #subscriptionDetails  .custom-range::-ms-thumb  {
+  #subscriptionDetails   .custom-range::-ms-thumb  {
     background: #E3B038;
   }
 
@@ -2670,7 +2746,7 @@ input::-webkit-calendar-picker-indicator {
     background: none;
  }
 
- #subscriptionDetails .detailsSubscription .card-body .card-txt{
+ #subscriptionDetails  .detailsSubscription .card-body .card-txt{
     font-size: 22px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -2722,11 +2798,11 @@ input::-webkit-calendar-picker-indicator {
    font-weight: 600;
    margin-top: 30px;
    color: black !important;
-
+   font-family: 'Poppins', sans-serif;
    
 }
 
-#subscriptionDetails .card-body img {
+#subscriptionDetails  .card-body img {
     margin-bottom: 20px;
 }
 
@@ -2741,7 +2817,6 @@ input::-webkit-calendar-picker-indicator {
     padding: 10px 40px !important;
 }
 
-
 #subscriptionDetails .card-body button {
     outline: none;
     text-decoration: none;
@@ -2751,7 +2826,6 @@ input::-webkit-calendar-picker-indicator {
     padding: 10px 25px;
     border-radius: 30px;
     font-size: 15px;
-    font-weight: bold;
     margin-top: 20px;
     margin-bottom: -10px;
 }
@@ -2786,8 +2860,8 @@ input::-webkit-calendar-picker-indicator {
 
 @media(max-width: 445px){
 
-    #subscriptionDetails .filterSubscription p {
-        margin-top: 10px !important;
+    #subscriptionDetails  .filterSubscription p {
+        margin-top: 0px;
     }
 
 }
@@ -2798,7 +2872,7 @@ input::-webkit-calendar-picker-indicator {
         margin-top: 0px;
     }
 
-    #subscriptionDetails .totalMonth {
+    #subscriptionDetails  .totalMonth {
         display: none;
     }
     #subscriptionDetails  .range{
@@ -2810,7 +2884,7 @@ input::-webkit-calendar-picker-indicator {
 
 @media(max-width: 1100px){
 
-    #subscriptionDetails  .card-body h5 {
+    #subscriptionDetails .card-body h5 {
         font-size: 16px;
     }
 
@@ -2843,14 +2917,11 @@ input::-webkit-calendar-picker-indicator {
         padding: 10px 25px;
     }
 
-    #subscriptionDetails .subscriptionCards {
+    #subscriptionDetails  .subscriptionCards {
         margin-top: 10px;
     }
-    #subscriptionDetails  .elements{
-        flex-direction: row-reverse !important;
-    }
 
-    #subscriptionDetails  .filterSubscription {
+    #subscriptionDetails .filterSubscription {
         margin-top: 10px;
     }
 }
@@ -2879,7 +2950,7 @@ input::-webkit-calendar-picker-indicator {
 
 @media(max-width: 1542px){
 
-    #subscriptionDetails .detailsSubscription .card-body .card-txt{
+    #subscriptionDetails  .detailsSubscription .card-body .card-txt{
 
         margin-top: 93px;
        
@@ -2898,12 +2969,12 @@ input::-webkit-calendar-picker-indicator {
        font-size: 20px;
      }
 
-     #subscriptionDetails .backbtn {
+     #subscriptionDetails   .backbtn {
      
         padding: 10px 30px !important;
     }
     
-    #subscriptionDetails  .nextbtn {
+    #subscriptionDetails .nextbtn {
         padding: 10px 30px !important;
     }
 }
@@ -2916,323 +2987,14 @@ input::-webkit-calendar-picker-indicator {
 }
 
 
-/* Events */
-
-#event #events{
-    margin-left: 6%;
-    margin-top: 10px;
-}
-#event .eventDate {
-    color: #FC9700;
-    font-weight: bold;
-    margin-bottom: 3px;
-}
-
-#event .rightContent{
-    margin-top: 50px !important;
-    background-color: white;
-    border-radius: 10px;
-}
-
-#event .imgEvents {
-    max-width: 250px !important;
-    border-radius: 25px;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    margin-left: 8%;
-    
-}
-
-#event .txtEvent {
-    padding-top: 30px;
-    margin-right: 2%;
-    
-    text-align: right !important;   
-    
-}
-
-#event .btnBookNow:hover{
-    transform: scale(1.03);
-}
-#event .txtEvent h1{
-    font-size: 21px !important;  
-    text-align: right !important;   
-   
-}
-
-@media(max-width: 1440px){
-    #event  .txtEvent h1{
-            font-size: 18px !important;        
-    }
-}
-
-#event .txtEvent h1{
-    
-    color: #202124;
-   
-}
-
-
-#event .txtEvent h1,  .txtEvent a {
-    font-weight: bold;
-}
-
-
-#event .btnBookNow a{
-    background-color: #E3B038 ;
-    color: white;
-    padding: 10px 40px;
-    cursor: pointer;
-    border-radius: 20px;
-    font-size: 16px;
-   
-}
-
-#event .btnBookNow {
-    margin-top: 10px !important;
-}
-
-#event .btnEvent {
-    text-align: right;
-   
-}
-#event .btnBookNow a:hover {
-    color: white;
-    text-decoration: none !important;
-}
-
-#event .filterEvents {
-    margin-top: 10px;
-    margin-left: 20px;
-    
-}
-#event .event:nth-of-type(1){
-    margin-bottom: -30px;
-
-}
-
-#event .event:nth-of-type(3){
-    margin-bottom: 20px;
-    margin-top: -20px;
-}
-
-#event .eventPrice{
-    font-size: 23px;
-  
-    color: black;
-    font-weight: bold;
-    padding-top: 5px;
-}
-
-#event select {
-    border-radius: 15px !important;
-    min-height: 50px;
-   margin-right: 20px !important;
-    width: 250px !important;
-    font-weight: 500 !important;
-    background: url(../img/Dropdown.png) no-repeat left #ddd;
-    background-color: white !important;
-    background-position-x: 7%;
-    -webkit-appearance: none;
-    font-weight: bold;
-
-    -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
-}
-#event select option{
-
-    color: black !important;
-    border-radius: 15px !important;
-}
-
-#event .eventsContainer, #event .event, #event .btnEvent{
-    
-    flex-direction: row-reverse !important;
-  
-  }
-
-@media(max-width: 1580px){
-    #event  .imgEvents {
-        max-width: 230px;
-        margin-top: 20px;
-       
-    }
-}
-
-@media(max-width: 1300px){
-
-    #event .imgEvents {
-        max-width: 230px;
-         margin-left: 0% !important;
- 
-    }
-    #event  #events{
-        margin-left: 2%;
-    }
-    #event .txtEvent p {
-        font-size: 17px;
-    }
-    #event  .btnBookNow a{
-        padding: 8px 35px;
-        font-size: 15px !important;
-    }
-}
-
-@media(max-width: 1170px){
-
-    #event .eventsImgs{
-        margin-right: 5% !important;
-    }
-
-    #event  .imgEvents {
-        max-width: 230px;
-       
-    }
-
-    #event  .event:nth-of-type(3) {
-        margin-top: -20px;
-   
-    }
-
-    #event  .blog .carousel-indicators {
-        bottom: -40px !important;
-       
-    }
-
-}
-
-
-@media(max-width: 1060px){
-
-
-    #event  .event:nth-of-type(1){
-        margin-top: 10px;
-    }
-    #event #events{
-        margin-left: 0%;
-    }
-  
-}
-
-@media(max-width: 991px){
-
-    #event .blog .carousel-indicators {
-        bottom: -15px !important;
-        margin-bottom: 20px !important;
-    }
-
-    #event .txtEvent h1{
-        text-align: center !important;   
-       
-    }
-
-    #event .elements{
-        flex-direction: row-reverse;
-    }
-
-
-
-    #event .eventsImgs{
-        text-align: center;
-        margin-top: -80px;
-        margin-right: 0% !important;
-       
-  
-    }
-
-    #event  .imgEvents {
-        max-width: 230px;
-        margin-top: 85px;
-        margin-left: 0% !important;
-    }
-
-    #event  .txtEvent {
-        text-align: center !important;
-        margin-top: -50px;
-    
-    }
-
-    #event  .btnEvent {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    #event .btnBookNow {
-        margin-bottom: 30px !important;
-    }
-
-    #event .filterEvents {
-       
-        margin-bottom: 0px;
-       margin-left: 9px;
-        text-align: center !important;
-        justify-content: center !important;
-       
-    }
-    
-    #event .eventPrice{
-        margin-bottom: 10px;
-    }
-
-}
-
-
-@media(max-width: 450px){
-
-    #event  .imgEvents {
-        max-width: 200px !important;
-    }
-}
-
-#event .blog .carousel-indicators {
-   
-    bottom: -60px;
-    margin-bottom: 20px !important;
-
-}
-
-#event .blog .carousel-indicators li {
-   
-    display: inline-block;
-    width: 15px;
-    background-color: rgba(0, 0, 0, 0);
-    height: 15px;
-    text-indent: -999px;
-    border: 1px solid #E3B038;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-#event .blog .carousel-indicators .active {
-    background: #E3B038;
-}
-
-
-#event .carousel-indicators li {
-    
-    display: inline-block;
-    width: 12px;
-    background-color: rgba(0, 0, 0, 0);
-    height: 12px;
-    text-indent: -999px;
-    border: 1px solid #E3B038;
-    border-radius: 10px;
-
-    margin-top: -7%;
-}
-
-#event .carousel-indicators .active {
-    background: #E3B038;
-}  
-
-
 /* footer */
 
 #footer{
     margin-top: 38px !important;
     color: white;
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+  
     display: block;
     align-items: center;
    
@@ -3245,13 +3007,13 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .pull-right a i {
-    margin-left: 15px;
+    margin-right: 15px;
     color: white;
 
 }
 
 .pull-right {
-    margin-left: 3%;
+    margin-right: 3%;
 }
 
 #footer p i {
@@ -3263,7 +3025,7 @@ input::-webkit-calendar-picker-indicator {
 
 }
 .pull-left {
-    margin-right: 3%;
+    margin-left: 3%;
 }
 
 @media(max-width:458px){
@@ -3271,8 +3033,4 @@ input::-webkit-calendar-picker-indicator {
         text-align: center !important;
         justify-content: center !important;
     }
- 
-}
-.footer{
-    flex-direction: row-reverse !important;
 }
